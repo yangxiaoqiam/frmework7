@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>我的通讯录</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section">
+            <header id="searchBar" class="wh-search">
+              <div class="wh-container">
+                <div class="wh-search-input">
+                  <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init">
+                    <label class="fa fa-search" for="search"></label>
+                    <input id="searchBug" type="search" placeholder="输入姓名/群组名称" />
+                    <a href="#" class="searchbar-cancel">取消</a>
+                  </form>
+                </div>
+              </div>
+            </header>
+            <article class="wh-article wh-article-contact">
+              <div class="wh-container">
+                <div class="wh-article-lists">
+                  <ul>
+                    <li><strong class="contact-icon"><img src="images/trans.png"></strong>
+                      <p>
+                      <a href="about:blank" class="contact-author">单位联系人</a> </p>
+                      <em class="add-em">群聊</em>
+                    </li>
+                   <li><strong class="contact-icon"><img src="images/trans.png"></strong>
+                      <p><a href="about:blank" class="contact-author">我的部门·销售二组</a> </p>
+                    </li>
+                    <li><strong class="contact-icon"><img src="images/trans.png"></strong>
+                      <p><a href="about:blank" class="contact-author">我的联系人</a> </p>
+                    </li>
+                    <li><strong class="contact-icon"><img src="images/trans.png"></strong>
+                      <p><a href="about:blank" class="contact-author">我的群组</a> </p>
+                    </li> 
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  // 清除搜索区域焦点bug
+  function removeSearch(schElmID) {
+    $$(schElmID).blur().val(""); //主动清除焦点
+    $$(schElmID).next('.searchbar-cancel').hide();
+  }
+
+  // 搜索焦点时
+  $$('#fbtn-save').on('click', function() {
+    $$(this).next('.searchbar-cancel').show();
+  })
+  </script>
+</body>
+
+</html>

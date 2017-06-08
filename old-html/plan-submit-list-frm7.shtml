@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>查询结果列表页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views"> 
+    <div class="view view-content">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section wh-section-bottomfixed">
+            <header id="searchBar" class="wh-search">
+              <div class="wh-container">
+                <div class="wh-search-input">
+                  <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init searchbar-active">
+                    <label class="fa fa-search" for="search"></label>
+                    <input id="searchBug" type="search" placeholder="搜索信息标题">
+                    <a href="#" class="searchbar-cancel">取消</a>
+                  </form>
+                </div>
+              </div>
+            </header>
+            <article class="wh-article wh-article-document wh-article-plan">
+              <div class="wh-container">
+                <div class="wh-article-lists">
+                  <ul>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                    <li>
+                      <strong class="document-icon">20150718</strong>
+                      <strong class="document-icon">研发部体育用品</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article> 
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <a href="#" class="fbtn-matter col-100 ">新增</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

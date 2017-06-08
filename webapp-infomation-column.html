@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>信息管理</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+ </head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-infomation-column">
+          <section class="show section-info wh-section wh-section-bottomfixed">
+            <div class="webapp-infomation-column">
+              <!-- <div class="subtitle">
+                <a href="webapp-infomation-channel.html">
+                  <i class="fa fa-angle-left"></i>
+                  <span>信息管理</span>
+                </a>
+              </div> -->
+              <!-- 顶部三个按钮 -->
+              <div class="swiper-container swiper-1">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><span>信息管理</span></div>
+                  <div class="swiper-slide"><span>单位首页</span></div>
+                  <div class="swiper-slide"><span>自定义信息频道</span></div>
+                  <div class="swiper-slide"><span>Slide 4</span></div>
+                  ...
+                  <div class="swiper-slide"><span>Slide 10</span></div>
+                </div>
+              </div>
+              <!-- 顶部三个按钮 -->
+              <div class="list-block">
+                <ul>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content">
+                      <div class="webapp-div">
+                        <div class="tips orange">图</div>
+                        <span>图片新闻</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                  </li>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content">
+                      <div class="webapp-div">
+                        <div class="tips yellow">通</div>
+                        <span>通知公告</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                  </li>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content">
+                      <div class="webapp-div">
+                        <div class="tips pureblue">图</div>
+                        <span>图片新闻</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                  </li>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content">
+                      <div class="webapp-div">
+                        <div class="tips blue">通</div>
+                        <span>通知公告</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                  </li>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content">
+                      <div class="webapp-div">
+                        <div class="tips skyblue">图</div>
+                        <span>图片新闻</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                  </li>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content">
+                      <div class="webapp-div">
+                        <div class="tips red">部</div>
+                        <span>部门通知</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="info-list">
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout"> 
+                      <a href="webapp-infomation-artical.html" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>第四届“和谐国机杯”职工乒乓球羽毛球比赛开幕</strong>
+                          <p>
+                            <span>2016-08-16  13:41</span>
+                            <em class="skyblue">党政新闻</em>
+                            <em class="skyblue">209</em>
+                          </p>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+
+                    <li class="swipeout"> 
+                      <a href="webapp-infomation-artical.html" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>第四届“和谐国机杯”职工乒乓球羽毛球比赛开幕</strong>
+                          <p>
+                            <span>2016-08-16  13:41</span>
+                            <em class="skyblue">党政新闻</em>
+                            <em class="skyblue">209</em>
+                          </p>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="template/js/template.min.js"></script>
+    <script type="text/javascript">
+    var myApp = new Framework7();
+    var $$ = Dom7;
+    var mainView = myApp.addView('.view'); 
+        // 头部互动切换
+    var mySwiper1 = myApp.swiper('.swiper-1', {
+        pagination: '.swiper-1 .swiper-pagination',
+        spaceBetween: 0,
+        slidesPerView: 3
+    });
+
+ $$(".swiper-1 .swiper-slide").click(function(){
+         $$(".swiper-1 .swiper-slide").removeClass("active");
+         if($$(this).hasClass("active")){
+            $$(this).removeClass("active");
+        }
+        else{
+            $$(this).addClass("active");
+        }
+    })
+    </script>
+</body>

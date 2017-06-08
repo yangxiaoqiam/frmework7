@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>新增后发起流程</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <section class="wh-section wh-section-bottomfixed">
+            <article class="wh-edit wh-edit-forum">
+              <div>
+                <table class="wh-table-edit">
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>计划编号：</th>
+                    <td>
+                      <div class="edit-ipt-a-arrow edit-ipt-reslut-r"><a href="###">A0099</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>计划名称：</th>
+                    <td>
+                      <input class="edit-ipt-r edit-ipt-arrow" type="text" readonly="" value="" name="select" placeholder="请选择&nbsp;">
+                      <em class="edit-em-r">&#xf054;</em>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>申请部门：</th>
+                    <td>
+                      <input class="edit-ipt-r edit-ipt-arrow" type="text" readonly="" value="" name="select" placeholder="请选择&nbsp; ">
+                      <em class="edit-em-r">&#xf054;</em>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>报销类型：</th>
+                    <td>
+                      <ul class="edit-radio">
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="本部门">
+                            <span class="edit-radio-l">本部门</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="集团">
+                            <span class="edit-radio-l">集团</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="抵账">
+                            <span class="edit-radio-l">抵账</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="其他">
+                            <span class="edit-radio-l">其他</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>计划明细：</th>
+                    <td>
+                      <div class="edit-ipt-a-arrow">
+                        <a href="#" class="edit-slt-r">请打开填写</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>领导审批： </th>
+                    <td> </td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <a href="#" class="fbtn-cancel col-50">保存草稿</a>
+                  <a href="#" class="fbtn-matter col-50">发送</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div> 
+</body>
+
+</html>

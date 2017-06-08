@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>会议</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-meeting-main">
+          <section class="wh-section wh-section-bottomfixed">
+            <!-- 日期控件 -->
+            <div class="content-block">
+              <div style="padding:0; margin-right:-15px; width:auto" class="content-block-inner">
+                <div id="calendar-inline-container"></div>
+              </div>
+            </div>     
+            <!-- 日期控件 -->
+          </section>
+          <!-- 底部导航 -->
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <div class="footer-line">
+                    <a href="##">申请会议</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript" src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript" src="template/js/plugin/simplecalendar.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+var $$ = Dom7;
+var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August' , 'September' , 'October', 'November', 'December'];
+ 
+var calendarInline = myApp.calendar({
+    container: '#calendar-inline-container',
+    value: [new Date()],
+    weekHeader: false,
+    toolbarTemplate: 
+        '<div class="toolbar calendar-custom-toolbar">' +
+            '<div class="toolbar-inner">' +
+                '<div class="left">' +
+                    '<a href="#" class="link icon-only"><i class="icon fa-angle-left"></i></a>' +
+                '</div>' +
+                '<div class="center"></div>' +
+                '<div class="right">' +
+                    '<a href="#" class="link icon-only"><i class="icon fa-angle-right"></i></a>' +
+                '</div>' +
+            '</div>' +
+        '</div>',
+    onOpen: function (p) {
+        $$('.calendar-custom-toolbar .center').text(monthNames[p.currentMonth] +', ' + p.currentYear);
+        $$('.calendar-custom-toolbar .left .link').on('click', function () {
+            calendarInline.prevMonth();
+        });
+        $$('.calendar-custom-toolbar .right .link').on('click', function () {
+            calendarInline.nextMonth();
+        });
+    },
+    onMonthYearChangeStart: function (p) {
+        $$('.calendar-custom-toolbar .center').text(monthNames[p.currentMonth] +', ' + p.currentYear);
+    }
+});     
+  </script>
+
+</body>

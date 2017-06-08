@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>表单页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+ </head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-mail-edit">
+          <section class="wh-section wh-section-bottomfixed">
+            <article class="wh-edit wh-edit-forum">
+              <div class="mail-edit">
+                <table class="wh-table-edit" style="border-collapse:separate;border-spacing: 0 10px;">
+                  <tr>
+                    <th>收件人<i class="fa fa-asterisk"></i>：</th>
+                    <td><input class="edit-ipt-r" type="text" placeholder="李小琳" /></td>
+                  </tr>
+                  <tr>
+                    <th>抄送<i class="fa fa-asterisk"></i>：</th>
+                    <td>
+                      <input class="edit-ipt-r edit-ipt-arrow" type="text" readonly value="" name="select" placeholder="请选择" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>主题<i class="fa fa-asterisk"></i>：</th>
+                    <td><input class="edit-ipt-r" type="text" placeholder="Re：万户OA与竞争对手什么什么的" /></td>
+                  </tr>
+                  <tr>
+                    <th>发送选项<i class="fa fa-asterisk"></i>：</th>
+                    <td>
+                      <ul class="edit-radio">
+                        <li>
+                          <label class="label-checkbox item-content">
+                          <input type="checkbox" name="my-checkbox" value="紧急">
+                          <span class="edit-radio-l">紧急</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="加热">
+                            <span class="edit-radio-l">加热</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="匿名">
+                            <span class="edit-radio-l">匿名</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="签名">
+                            <span class="edit-radio-l">签名</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>duoxuan发送选项<i class="fa fa-asterisk"></i>：</th>
+                    <td>
+                      <ul class="edit-radio">
+                            <li class="radio-active"><span class="edit-radio-l">紧急</span></li>
+                            <li class=""><span class="edit-radio-l">加热</span></li>
+                            <li class=""><span class="edit-radio-l">签名</span></li>
+                            <li class=""><span class="edit-radio-l">匿名</span></li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>附件<i class="fa fa-asterisk"></i>：</th>
+                    <td>
+                      <ul class="edit-upload">
+                        <li class="edit-upload-ed"><span><img src="images/trans.png" /><em><i class="fa fa-minus-circle"></i></em></span></li>
+                        <li class="edit-upload-ed"><span><img src="images/trans.png" /><em><i class="fa fa-minus-circle"></i></em></span></li>
+                        <li class="edit-upload-ed"><span><img src="images/trans.png" /><em><i class="fa fa-minus-circle"></i></em></span></li>
+                        <li class="edit-upload-in"><span><i class="fa fa-plus"></i></span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>正文<i class="fa fa-asterisk"></i>：</th>
+                    <td>
+                      <div class="edit-txta-box">
+                        <textarea class="edit-txta edit-txta-l" placeholder="请输入文字"></textarea>
+                      </div>
+                      <div class="edit-txta-quote">
+                        <p>---来源信息---<br />汇报人员：各产品线产品经理（李黎、于芳、李勇）、开发经理</p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-container">
+              <div class="wh-footer-btn row">
+                <div class="webapp-footer-linebtn">
+                  <div class="fl clearfix">
+                    <a href="#" class="panel-return-a">清空</a>
+                    <a href="#" class="panel-send-a">发送</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  //Export DOM7 to local variable to make it easy accessable
+  var myApp = new Framework7();
+
+  var $$ = Dom7;
+
+  $$('.action1').on('click', function() {
+    myApp.alert('Action 1');
+  });
+  $$('.action2').on('click', function() {
+    myApp.alert('Action 2');
+  });
+
+   $$("ul.edit-radio li").click(function(){
+       if($$(this).hasClass("radio-active")){
+          $$(this).removeClass("radio-active");
+      }
+      else{
+          $$(this).addClass("radio-active");
+      }
+
+  })
+  </script>
+</body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="theme-whred">
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>常用流程</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-color.min.css" />
+</head>
+
+<body>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-mail">
+          <section class="section-mail wh-section wh-section-bottomfixed">
+            <div class="mail-todo">
+              <div class="app-tabheader-line clearfix">
+                <!-- 关联到第一个tab, 默认激活 -->
+                <div class="clearfix">
+                  <a href="#tab-mail-todo1" class="tab-link active">
+                    <span>收件箱111<em>19</em></span>
+                  </a>
+                  <a href="#tab-mail-todo2" class="tab-link ">
+                    <span>发件箱</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab-mail-todo1" class="tab active">
+                  <div class="mail-todo-file">
+                    <header id="searchBar" class="wh-search">
+                      <div class="wh-container">
+                        <div class="wh-search-input">
+                          <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                            <label class="fa fa-search" for="search"></label>
+                            <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                            <p class="fabu"><a href="webapp-mail-edit.html" class="button button-round active"><i class="fa fa-pencil-square-o"></i>写信</a></p>
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="todo-list">
+                      <div class="list-block">
+                        <ul>
+                          <li class="swipeout mail-noread">
+                            <a href="webapp-mail-readonly.html" class="swipeout-content item-content">
+                              <div>
+                                <strong class="forum-avatar">
+                                  <i class="fa fa-envelope-b"></i>
+                                  <span class="mail-from">系统</span>
+                                </strong>
+                                <p><em><i class="fa fa-fujian"></i></em><span>移动办公产品顺利验收并付诸实施</span></p>
+                                <p><i class="mail-time">(2015-03-20 13:30)</i></p>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                          </li>
+                          <li class="swipeout mail-read">
+                            <a href="#" class="swipeout-content item-content">
+                              <div>
+                                <strong class="forum-avatar">
+                                  <i class="fa fa-envelope-a"></i>
+                                  <span class="mail-from">李</span>
+                                </strong>
+                                <p><em><i class="fa fa-fujian"></i></em><span>移动办公产品顺利验收并付诸实施</span></p>
+                                <p><i class="mail-time">(2015-03-20 13:30)</i></p>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab-mail-todo2" class="tab">
+                  <div class="mail-todo-file">
+                    <header id="searchBar" class="wh-search">
+                      <div class="wh-container">
+                        <div class="wh-search-input">
+                          <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                            <label class="fa fa-search" for="search"></label>
+                            <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                            <p class="fabu"><a href="webapp-mail-edit.html" class="button button-round active"><i class="fa fa-pencil-square-o"></i>写信</a></p>
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="todo-list">
+                      <div class="list-block">
+                        <ul>
+                            <li class="swipeout mail-send">
+                            <a href="#" class="swipeout-content item-content">
+                              <div>
+                                <p><em><i class="fa fa-fujian"></i></em><span>移动办公产品顺利验收并付诸实施</span><i class="mail-time">(2015-03-20 13:30)</i></p>
+                                <p class="send-state"><span class="mail-state">已发送</span><span class="send-dom">李正诚、李正诚</span></p>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+
+
+  </script>
+</body>

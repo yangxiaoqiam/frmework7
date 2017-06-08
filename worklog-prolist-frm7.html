@@ -1,0 +1,138 @@
+<html>
+ 
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>日志列表</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view view-content">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section wh-section-bottomfixed">
+            <header id="searchBar" class="wh-search">
+              <div class="wh-container">
+                <div class="wh-search-input">
+                  <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init searchbar-active">
+                    <label class="fa fa-search" for="search"></label>
+                    <input id="searchBug" type="search" placeholder="搜索信息标题" class="">
+                    <a href="#" class="searchbar-cancel" >取消</a>
+                  </form>
+                </div>
+              </div>
+            </header>
+            <article class="wh-article wh-article-info wh-log-prolist">
+              <div class="wh-container">
+                <div class="wh-article-lists">
+                  <ul>
+                    <li class="current">
+                      <strong class="forum-avatar">
+                             <i class="fa fa-check-circle"></i>
+                            </strong>
+                      <div>
+                        <a href="#">项目编号</a>
+                        <span>HF0090008777111-0000-990</span>
+                        <p>合肥旅游局一期建设项目</p>
+                      </div>
+                    </li>
+                    <li>
+                      <strong class="forum-avatar">
+                             <i class="fa fa-check-circle"></i>
+                            </strong>
+                      <div>
+                        <a href="#">项目编号</a>
+                        <span>HF0090008777111-0000-990</span>
+                        <p>合肥旅游局一期建设项目</p>
+                      </div>
+                    </li>
+                    <li>
+                      <strong class="forum-avatar">
+                             <i class="fa fa-check-circle"></i>
+                            </strong>
+                      <div>
+                        <a href="#">项目编号</a>
+                        <span>HF0090008777111-0000-990</span>
+                        <p>合肥旅游局一期建设项目</p>
+                      </div>
+                    </li>
+                    <li>
+                      <strong class="forum-avatar">
+                             <i class="fa fa-check-circle"></i>
+                            </strong>
+                      <div>
+                        <a href="#">项目编号</a>
+                        <span>HF0090008777111-0000-990</span>
+                        <p>合肥旅游局一期建设项目</p>
+                      </div>
+                    </li>
+                    <li>
+                      <strong class="forum-avatar">
+                             <i class="fa fa-check-circle"></i>
+                            </strong>
+                      <div>
+                        <a href="#">项目编号</a>
+                        <span>HF0090008777111-0000-990</span>
+                        <p>合肥旅游局一期建设项目</p>
+                      </div>
+                    </li>
+                    <li>
+                      <strong class="forum-avatar">
+                             <i class="fa fa-check-circle"></i>
+                            </strong>
+                      <div>
+                        <a href="#">项目编号</a>
+                        <span>HF0090008777111-0000-990</span>
+                        <p>合肥旅游局一期建设项目</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <a href="#" class="fbtn-matter col-100">确定已选</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="template/js/template.min.js"></script>
+  <script src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  // 清除搜索区域焦点bug
+
+  function removeSearch(schElmID) {
+    $$(schElmID).blur().val(""); //主动清除焦点
+    $$(schElmID).next('.searchbar-cancel').hide();
+  }
+
+  // 搜索焦点时
+  $$('#fbtn-save').on('click', function() {
+    $$(this).next('.searchbar-cancel').show();
+  })
+
+  $(document).ready(function() {
+    $(".wh-article-lists li").click(function() {
+      $(this).addClass("current").siblings().removeClass("current");
+    })
+  })
+  </script>
+</body>
+
+</html>

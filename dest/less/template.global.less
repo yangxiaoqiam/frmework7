@@ -1,0 +1,135 @@
+html,body{-ms-text-size-adjust: 100%; /* 2 */-webkit-text-size-adjust: 100%; /* 2 */-webkit-font-smoothing: antialiased; font-smoothing:antialiased;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,menu{margin:0;padding:0;}
+header,footer,article,section,nav,menu,hgroup,aside,dialog,figure {display:block;}
+ol,ul,li{list-style-type:none;}
+button{overflow:visible;cursor:pointer}
+fieldset,img{border:none 0;}
+input,select{font:100% sans-serif;}
+input,select,form,img,button,textarea{vertical-align:middle;}
+em,strong,cite,i{font-style:normal;}
+table{empty-cells:show;border-collapse:collapse;}
+th,td{border-collapse:collapse;}
+a,a:link,a:visited,a:active{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+abbr[title] {border-bottom: 1px dotted;}
+b,strong {font-weight: bold;}
+svg:not(:root) {overflow: hidden;}
+hr {box-sizing: content-box;height: 0; border:none;margin:0;}
+
+
+//旧版浏览器
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+.fr{float:right}
+.fl{float:left}
+
+//单边圆角
+.border-top-radius(@radius) {
+  border-top-right-radius: @radius;
+   border-top-left-radius: @radius;
+}
+.border-right-radius(@radius) {
+  border-bottom-right-radius: @radius;
+     border-top-right-radius: @radius;
+}
+.border-bottom-radius(@radius) {
+  border-bottom-right-radius: @radius;
+   border-bottom-left-radius: @radius;
+}
+.border-left-radius(@radius) {
+  border-bottom-left-radius: @radius;
+     border-top-left-radius: @radius;
+}
+//重置page
+
+
+//重置 ios/toolbar.less
+.toolbar {
+  a {
+    font-weight: 700;
+    &.link{
+    }
+  }
+}
+
+//重置单选多选图标 ios/forms.less
+label.label-checkbox,
+label.label-radio {
+  cursor: pointer;
+  .edit-radio-l {
+    &:before {
+      color: @color-split;
+    }
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+    &:checked + .edit-radio-l {
+      color: @color-text-first;
+      &:before {
+        color: @themeColor;
+      }
+    }
+  }
+}
+
+label.label-checkbox,
+label.label-radio {
+  html:not(.watch-active-state) &:active,
+  &.active-state {
+    background-color: transparent;
+    .edit-radio-l {
+      &:before {
+        color: @color-text;
+        transition-duration: 300ms
+      }
+    }
+  }
+}
+
+
+//重置 ios/modals.less
+.modal {
+  font-size: 1.4rem;
+  .modal-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+//重置 ios/searchbar.less
+.searchbar{
+  padding:0;
+  height: inherit;
+  background-color: transparent;
+  &:after{
+    content: '';
+    background-color: transparent;
+  }
+  .searchbar-cancel{
+    font-size: 1.4rem;
+    z-index: 10;
+    width: 4rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: @color-text;
+    text-align: center;
+    transition-duration:.2s;
+    background-color: #eee;
+  }
+  &.searchbar-active{
+     .searchbar-cancel{
+        margin-left:.8rem;
+     }
+  }
+  &.searchbar-not-empty{
+
+  }
+}
+
+// 重置展开动画
+.accordion-item-content{
+  transition-duration:.3s;
+}

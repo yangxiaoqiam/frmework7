@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>查看日志</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view view-content">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section wh-section-bottomfixed">
+            <article class=" wh-edit wh-article wh-article-document wh-article-log wh-article-log-edit">
+              <div>
+                <div class="log-edit-tip clearfix">
+                  <ul>
+                    <li class="current">
+                      <div class="org"><span>晴</span><i class="fa fa-check-circle"></i></div>
+                    </li>
+                    <li>
+                      <div class="blue"><span>雨</span><i class="fa fa-check-circle"></i></div>
+                    </li>
+                    <li>
+                      <div class="zee"><span>阴</span><i class="fa fa-check-circle"></i></div>
+                    </li>
+                    <li>
+                      <div class="yel"><span>雪</span><i class="fa fa-check-circle"></i></div>
+                    </li>
+                  </ul>
+                </div>
+                <table class="wh-table-edit">
+                  <tbody>
+                    <tr>
+                      <th>日期：</th>
+                      <td>
+                        <div class="edit-ipt-a-arrow">
+                          <input class="edit-ipt-r edit-ipt-arrow" id="scroller" type="text" name="scroller" placeholder="选择日期" readonly="" value="2016-07-06 21:01">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>日志类型：</th>
+                      <td>
+                        <ul class="edit-radio">
+                          <li>
+                            <label class="label-radio item-content">
+                              <input type="radio" name="my-radio" value="实名">
+                              <span class="edit-radio-l">全天日志</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="label-radio item-content">
+                              <input type="radio" name="my-radio" value="实名">
+                              <span class="edit-radio-l">分时段日志</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>工时：</th>
+                      <td>
+                        <div class="edit-ipt-r">
+                          <span>8小时</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>内容<i class="fa fa-asterisk"></i>：</th>
+                      <td>
+                        <div class="edit-txta-box">
+                          <textarea class="edit-txta edit-txta-l" placeholder=" ">在“系统管理”-“移动OA管理”-“微信企业号管理”中的增加一项“同步ID设置”，与企业号后台通讯录人员资料中“账号”字段s
+                          </textarea>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>结果<i class="fa fa-asterisk"></i>：</th>
+                      <td>
+                        <p>企业号后台通讯录人员资料中“账号”字段的对应。该ID为唯一标 </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="log-notice">
+                  <p>备注：</p>
+                  <textarea></textarea>
+                </div>
+                <div class="log-notice-con">
+                  <p>留言：</p>
+                  <em>[留言人姓名]：</em><em class="color-grey">2016-09-02</em>
+                  <br/>
+                  <p>[留言内容]</p>
+                </div>
+                <div class="log-notice-list">
+                  <li>
+                    <span>王小强</span><em>2016-04-11 16:05</em>
+                    <p>麻烦把具体方案写的清楚一下，用word给我</p>
+                  </li>
+                  <li>
+                    <span>王小强</span><em>2016-04-11 16:05</em>
+                    <p>麻烦把具体方案写的清楚一下，用word给我</p>
+                  </li>
+                  <li>
+                    <span>王小强</span><em>2016-04-11 16:05</em>
+                    <p>麻烦把具体方案写的清楚一下，用word给我</p>
+                  </li>
+                </div>
+              </div>
+            </article>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <a href="#" class="fbtn-cancel col-50">修改日志</a>
+                  <a href="#" class="fbtn-matter col-50">提交留言</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="template/js/template.min.js"></script> 
+  <script src="template/js/plugin/zepto.js"></script>  
+
+  <script type="text/javascript"> 
+    //Export DOM7 to local variable to make it easy accessable
+    var myApp = new Framework7();
+    var $$ = Dom7;  
+
+    $(".log-edit-tip li").click(function() {
+      $(this).addClass("current").siblings().removeClass("current")
+    })
+
+  </script>
+</body>
+</html>

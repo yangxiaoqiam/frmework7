@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>考勤信息页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section">
+            <article class="wh-article wh-article-document wh-article-clockinfo ">
+              <div class="wh-container">
+                <div class="wh-article-lists">
+                  <ul>
+                    <li>
+                      <span>07:30:20</span>
+                      <i class="fa fa-map-marker"></i>
+                      <p>
+                        <a href="###">安徽省合肥市马鞍山南路和地大厦</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                        <img src="images/trans.png"> 
+                        <img src="images/trans.png"> 
+                        <img src="images/trans.png"> 
+                        <strong>在北京华联商厦签到</strong>
+                      </p>
+                    </li>
+                    <li>
+                      <span>08:10:20</span>
+                      <i class="fa fa-map-marker"></i>
+                      <p>
+                        <a href="###">安徽省合肥市马鞍山南路和地大厦</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                      </p>
+                    </li>
+                    <li>
+                      <span>18:38:20</span>
+                      <i class="fa fa-map-marker"></i> 
+                      <p>
+                        <a href="###">安徽省合肥市望江路合家福</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                      </p>
+                    </li>
+                    <li>
+                      <span>18:38:20</span>
+                      <i class="fa fa-map-marker"></i> 
+                      <p>
+                        <a href="###">安徽省合肥市望江路合家福</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                      </p>
+                    </li>
+                    <li>
+                      <span>18:38:20</span>
+                      <i class="fa fa-map-marker"></i> 
+                      <p>
+                        <a href="###">安徽省合肥市望江路合家福</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                      </p>
+                    </li>
+                    <li>
+                      <span>18:38:20</span>
+                      <i class="fa fa-map-marker"></i> 
+                      <p>
+                        <a href="###">安徽省合肥市望江路合家福</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                      </p>
+                    </li>
+                    <li>
+                      <span>18:38:20</span>
+                      <i class="fa fa-map-marker"></i> 
+                      <p>
+                        <a href="###">安徽省合肥市望江路合家福</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                      </p>
+                    </li>
+                    <li>
+                      <span>18:38:20</span>
+                      <i class="fa fa-map-marker"></i> 
+                      <p>
+                        <a href="###">安徽省合肥市望江路合家福</a>
+                        <img src="images/trans.png">
+                        <img src="images/trans.png">
+                        <img src="images/trans.png"> 
+                      </p>
+                    </li>
+                  </ul>
+                  <aside class="wh-load-box" style="display: block">
+                    <div class="wh-load-tap">上滑加载更多</div>
+                    <div class="wh-load-md">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>

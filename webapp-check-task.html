@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>常用流程</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+</head>
+
+<body>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-mail">
+          <section class="section-mail wh-section wh-section-bottomfixed">
+            <div class="mail-todo">
+              <div class="app-tabheader-line clearfix">
+                <!-- 关联到第一个tab, 默认激活 -->
+                <div class="clearfix">
+                  <a href="#tab-mail-todo1" class="tab-link active">
+                    <span>表单</span>
+                  </a>
+                  <a href="#tab-mail-todo2" class="tab-link ">
+                    <span>记录</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab-mail-todo1" class="tab active">
+                  
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab-mail-todo2" class="tab">
+                  
+                </div>
+              </div>
+            </div>
+          </section> 
+          <footer class="wh-footer wh-footer-forum">
+                        <div class="wh-container">
+                            <div class="wh-footer-btn row">
+                                <div class="webapp-footer-linebtn">
+                                    <div class="fl clearfix">
+                                        <a href="#" class="panel-return-a">反馈</a>
+                                        <a href="#" class="panel-send-a">修改任务</a>
+                                    </div>
+                                    <!-- <a id="fbtn-form-more" data-popover=".popover-links" class="fr fbtn-more link open-popover "><span>更多</span></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+
+
+  </script>
+</body>

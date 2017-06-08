@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>会议</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-meeting-main">
+          <section class="wh-section wh-section-bottomfixed pull-to-refresh-content pull-to-refresh-no-navbar">
+            <!-- 下拉刷新 -->
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+              <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <!-- 下拉刷新 -->
+            <div class="webapp-meeting">
+              <!-- <div class="calendar hidden-print">
+                <header>
+                  <h2 class="month"></h2>
+                  <i class="btn-prev fa fa-angle-left"></i>
+                  <i class="btn-next fa fa-angle-right"></i>
+                </header>
+                <table>
+                  <thead class="event-days">
+                    <tr></tr>
+                  </thead>
+                  <tbody class="event-calendar">
+                    <tr class="one"></tr>
+                    <tr class="two"></tr>
+                    <tr class="three"></tr>
+                    <tr class="four"></tr>
+                    <tr class="five "></tr>
+                  </tbody>
+                </table>
+                <div class="list">
+                  <div class="day-event" date-day="2" date-month="2" date-year="2016" data-number="1"></div>
+                </div>
+              </div> -->
+              <div class="meeting-notice">
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout">
+                      <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                        <div>
+                          <strong class="forum-avatar m-tag-ny">待参加</strong>
+                          <p>
+                            【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！[【送达时间】]
+                            <span>[2015-03-20 13:30]</span>
+                          </p>
+                        </div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                        <div>
+                          <strong class="forum-avatar m-tag-not">不参加</strong>
+                          <p>
+                            【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！[【送达时间】]
+                            <span>[2015-03-20 13:30]</span>
+                          </p>
+                        </div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                        <div>
+                          <strong class="forum-avatar m-tag-had">已参加</strong>
+                          <p>
+                            【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！[【送达时间】]
+                            <span>[2015-03-20 13:30]</span>
+                          </p>
+                        </div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <div class="footer-line">
+                    <a href="##">申请会议</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript" src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript" src="template/js/plugin/simplecalendar.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+  calendar.init('ajax', 'json/events.json');
+
+    // 下拉刷新页面
+  var ptrContent = $$('.pull-to-refresh-content');
+
+  // 添加'refresh'监听器
+  ptrContent.on('refresh', function(e) {
+    // 模拟2s的加载过程
+    setTimeout(function() {
+      var title = titles[Math.floor(Math.random() * titles.length)];
+      var time = times[Math.floor(Math.random() * times.length)];
+      var where = wheres[Math.floor(Math.random() * wheres.length)];
+      var click = clicks[Math.floor(Math.random() * clicks.length)];
+
+      // 列表元素的HTML字符串
+      var itemHTML = '<div class="webapp-div"><strong>' + title + '<em>通知</em></strong>' + '<p><span>' + time + '</span><em class="skyblue">' + where + '</em><em class="skyblue">' + click + '</em></p></div>';
+
+      // 前插新列表元素
+      ptrContent.find('.info-list').prepend(itemHTML);
+
+      // 加载完毕需要重置
+      myApp.pullToRefreshDone();
+    }, 2000);
+
+
+    // 清除搜索区域焦点bug
+    function removeSearch(schElmID) {
+      $$(schElmID).blur().val(""); //主动清除焦点
+      $$(schElmID).next('.searchbar-cancel').hide();
+    }
+
+    // 搜索焦点时
+    $$('#fbtn-save').on('click', function() {
+      $$(this).next('.searchbar-cancel').show();
+    })
+  });
+  </script>
+
+</body>

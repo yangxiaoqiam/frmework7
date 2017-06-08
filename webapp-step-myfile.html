@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>待办流程</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+ </head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-step-myfile">
+          <section class="wh-section wh-section-bottomfixed">
+            <div class="step-todo">
+              <header id="searchBar" class="wh-search">
+                <div class="wh-container">
+                  <div class="wh-search-input">
+                    <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                      <label class="fa fa-search" for="search"></label>
+                      <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                    </form>
+                  </div>
+                </div>
+              </header>
+              <div class="todo-list">
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>
+                      流程标题 
+                    </strong>
+                          <P>
+                            <span>发送时间</span>
+                            <em class="skyblue">办理状态</em>
+                          </P>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>
+                      在国机集团2014-2015年度先进基层党组织、优秀共产党员和优秀党务工作者拟表彰对象公示  
+                    </strong>
+                          <P>
+                            <span>发送时间</span>
+                            <em class="pink">办理状态</em>
+                            <em class="green">办理完成</em>
+                          </P>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>
+                      关于拟推荐全国老干部工作先进集体的公示  
+                    </strong>
+                          <P>
+                            <span>发送时间</span>
+                            <em class="green">办理状态</em>
+                          </P>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row no-gutter">
+                  <a href="webapp-step-todo.html" class="fbtn-cancle col-25">
+                    <div><i class="fa fa-step-pre"></i></div><span>待办</span></a>
+                  <a href="webapp-step-over.html" class="fbtn-cancle col-25">
+                    <div><i class="fa fa-step-over"></i></div><span>已办</span></a>
+                  <a href="webapp-step-myfile.html" class="fbtn-matter col-25">
+                    <div><i class="fa fa-step-mine"></i></div><span>我的</span></a>
+                  <a href="webapp-step-start.html" class="fbtn-cancle col-25">
+                    <div><i class="fa fa-share-alt"></i></div><span>发起</span></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+  </script>
+</body>

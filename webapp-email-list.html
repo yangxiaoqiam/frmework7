@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>公用文章编辑页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-email-list">
+          <header id="headerBug" class="wh-header navbar">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div id="headerBtn" class="wh-header-btn row no-gutter">
+                  <a href="#tab11" class="tab-link col-50 active"><span>收件箱</span><em>39</em></a>
+                  <a href="#tab12" class="tab-link col-50"><span>发件箱<em>39</em></span></a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="wh-section wh-section-topfixed">
+            <div class="webapp-emaillist">
+              <!-- Tabs, 标签内容区容器 -->
+              <div class="tabs">
+                <div id="tab11" class="tab active ">
+                  <div class="list-block">
+                    <ul class="webapplist-nomargin">
+                      <li class="swipeout">
+                        <a href="#" class="swipeout-content item-content">
+                          <div>
+                            <strong class="forum-avatar"><img src="images/trans.png"></strong>
+                            <p><em>附件</em><span>深化移动办公，某项目的移动办公产品顺利验收并付诸实施</span><i>2015-03-20 13:30</i></p>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                      </li>
+                      <li class="swipeout">
+                        <a href="#" class="swipeout-content item-content">
+                          <div>
+                            <strong class="forum-avatar"><img src="images/trans.png"></strong>
+                            <p><em>附件</em><span>深化移动办公，某项目的移动办公产品顺利验收并付诸实施</span><i>2015-03-20 13:30</i></p>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                      </li>
+                      <li class="swipeout">
+                        <a href="#" class="swipeout-content item-content">
+                          <div>
+                            <strong class="forum-avatar"><img src="images/trans.png"></strong>
+                            <p><em>附件</em><span>深化移动办公，某项目的移动办公产品顺利验收并付诸实施</span><i>2015-03-20 13:30</i></p>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab12" class="tab">
+                  <div class="list-block">
+                    <ul class="webapplist-nomargin">
+                      <li class="swipeout">
+                        <a href="#" class="swipeout-content item-content">
+                          <div>
+                            <strong class="forum-avatar"><img src="images/trans.png"></strong>
+                            <p><em>附件</em><span>深化移动办公，某项目的移动办公产品顺利验收并付诸实施1</span><i>2015-03-20 13:30</i></p>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                      </li>
+                      <li class="swipeout">
+                        <a href="#" class="swipeout-content item-content">
+                          <div>
+                            <strong class="forum-avatar"><img src="images/trans.png"></strong>
+                            <p><em>附件</em><span>深化移动办公，某项目的移动办公产品顺利验收并付诸实施1</span><i>2015-03-20 13:30</i></p>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                      </li>
+                      <li class="swipeout">
+                        <a href="#" class="swipeout-content item-content">
+                          <div>
+                            <strong class="forum-avatar"><img src="images/trans.png"></strong>
+                            <p><em>附件</em><span>深化移动办公，某项目的移动办公产品顺利验收并付诸实施1</span><i>2015-03-20 13:30</i></p>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">删除</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script>
+  var myApp = new Framework7();
+
+  var $$ = Dom7;
+
+  $$('.action1').on('click', function() {
+    myApp.alert('Action 1');
+  });
+  $$('.action2').on('click', function() {
+    myApp.alert('Action 2');
+  });
+  </script>
+</body>
+
+</html>

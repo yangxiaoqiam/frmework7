@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>信息频道视图</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-mail-readonly">
+          <section class="wh-section wh-section-bottomfixed">
+            <div class="webapp-mail-readonly">
+              <table class="wh-table-edit" style="border-collapse:separate;border-spacing: 0 8px;">
+                <tr>
+                  <th>时间<em class="red-em">*</em>：</th>
+                  <td><input class="edit-ipt-r" type="text" placeholder="李小琳" readonly value="2015-06-30 16:40" /></td>
+                </tr>
+                <tr>
+                  <th>发件人：</th>
+                  <td><input class="edit-ipt-r" type="text" value="李小琳" readonly /></td>
+                </tr>
+                <tr>
+                  <th>收件人：</th>
+                  <td>
+                    <span class="edit-ipt-reslut-l">网站事业部,南方大区,北方大区,各事业部,网站事业部,南方大区,北方大区,各事业部,网站事业部,南方大区,北方大区,各事业部</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>抄送：</th>
+                  <td>
+                    <span class="edit-ipt-reslut-r">范鑫，汪宏新，张晶星</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>主题：</th>
+                  <td><span class="edit-ipt-reslut-l">万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的</span></td>
+                </tr>
+                <tr>
+                  <th>附件：</th>
+                  <td>
+                    <div class="wh-article-atta">
+                      <p>
+                        <i class="fa fa-paperclip"></i>
+                        <a href="#">
+                          <strong class="atta-name">10000002-A0398-v1.2.zip</strong>
+                        </a>
+                        <span class="atta-size">3.35M</span>
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>正文：</th>
+                  <td><span class="edit-ipt-reslut-l">万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的万户OA与竞争对手什么什么的</span></td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-container">
+              <div class="wh-footer-btn row">
+                <div class="webapp-footer-linebtn">
+                  <div class="fl clearfix">
+                    <a href="#" class="panel-return-a">退回</a>
+                    <a href="#" class="panel-send-a">发送</a>
+                  </div> 
+                  <a id="fbtn-form-more" data-popover=".popover-links" class="fr fbtn-more link open-popover "><span>更多</span></a> 
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="fbtn-more-con" class="fbtn-more-nav popover popover-links">
+  <div class="fbtn-more-nav-inner">
+    <a href="javascript:replyAll();" class="fbtn-matter col-xs-12"><i class="fa fa-reply-all"></i>回复全部</a>
+    <a href="javascript:replyAllandAccessory();" class="fbtn-matter col-xs-12"><i class="fa fa-reply-all"></i>回复全部（带附件）</a>
+  </div>
+</div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+
+  var mainView = myApp.addView('.view');
+
+  var $$ = Dom7;
+
+  //右下角菜单弹框
+$$('#fbtn-more').on('click', function () {
+    var clickedLink = this;
+    myApp.popover('#fbtn-more-con', clickedLink);
+    myApp.closeModal('#fbtn-more-list a')
+});
+
+  </script>
+</body>

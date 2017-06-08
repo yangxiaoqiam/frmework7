@@ -1,0 +1,55 @@
+//导入变量库
+@import "template.variables.less";
+
+.theme-mixin(@colorName, @color) {
+  .theme-@{colorName} a{
+    color:inherit;
+  }
+  .theme-@{colorName}{
+    //固定link类对应的皮肤色
+    .link{
+      color:@color;
+    }
+    //顶部菜单亮色颜色
+
+    .wh-header-btn{
+      a{
+        &:hover,&.active{
+          color:@color;
+          span{
+            color:@color;
+          }
+        }
+      }
+    }
+
+    //底部菜单亮色颜色
+    .wh-footer-btn .fbtn-matter,
+    .wh-footer-btn .fbtn-matter{
+      color: @color;
+    }
+
+    //右下角子菜单颜色
+    .fbtn-more-nav .fbtn-more-nav-inner a{
+      color:@color;
+    }
+
+    //搜索栏取消颜色
+    .searchbar.searchbar-active{
+      .searchbar-cancel{
+        color: @color;
+      }
+    }
+  }
+}
+
+/*.theme-mixin(e('gray'), #8e8e93);
+.theme-mixin(e('white'), #ffffff);
+.theme-mixin(e('black'), #000000);*/
+.theme-mixin(e('lightblue'), #5ac8fa);
+.theme-mixin(e('yellow'), #ffcc00);
+.theme-mixin(e('orange'), #ff9500);
+.theme-mixin(e('pink'), #ff2d55);
+.theme-mixin(e('blue'), #007aff);
+.theme-mixin(e('green'), #21c164);
+.theme-mixin(e('red'), #ff3b30);

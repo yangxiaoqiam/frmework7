@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>汇报</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body>
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="webapp-report">
+          <section class="section-focum wh-section wh-section-bottomfixed" style="display: block;">
+            <div class="webapp-form">
+              <div class="three-tab-app clearfix">
+                <div class="clearfix">
+                  <a href="#tab1" class="tab-link active">
+                    <span>周报</span>
+                  </a>
+                  <a href="#tab2" class="tab-link ">
+                    <span>月报</span>
+                  </a>
+                  <a href="#tab3" class="tab-link ">
+                    <!-- 切换到2个标签时增加的class "tab-link-rw" 并改变a 的宽度为50%-->
+                    <span>其他</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab1" class="tab active">
+                  <header id="searchBar" class="wh-search">
+                    <div class="wh-container">
+                      <div class="wh-search-input">
+                        <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar searchbar-active">
+                          <label class="fa fa-search" for="search"></label>
+                          <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询">
+                          <i class="fa fa-times-circle-o"></i>
+                          <p class="fabu"><a href="#" class="button button-round active"><i class="fa fa-pencil-square-o"></i>新建</a></p>
+                        </form>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="webapp-meeting webapp-report-view">
+                    <div class="meeting-notice">
+                      <div class="list-block">
+                        <ul class="">
+                          <li class="swipeout">
+                            <a href="webapp-meeting-info.html" class="swipeout-content item-content" style="">
+                              <div>
+                                <img src="">
+                                <p>
+                                  【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                                  <span>[2015-03-20 13:30]</span>
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="swipeout">
+                            <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                              <div>
+                                <span class="report-wait"></span>
+                                <img src="">
+                                <p>
+                                  【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                                  <span>[2015-03-20 13:30]</span>
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="swipeout">
+                            <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                              <div>
+                                <strong class="forum-avatar m-tag-had">周</strong>
+                                <p>
+                                  【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                                  <span>[2015-03-20 13:30]</span>
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab2" class="tab">
+                  <header id="searchBar" class="wh-search">
+                    <div class="wh-container">
+                      <div class="wh-search-input">
+                        <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar searchbar-active">
+                          <label class="fa fa-search" for="search"></label>
+                          <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询">
+                          <i class="fa fa-times-circle-o"></i>
+                          <p class="fabu"><a href="#" class="button button-round active"><i class="fa fa-pencil-square-o"></i>新建</a></p>
+                        </form>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+                <!-- Tab 3 -->
+                <div id="tab3" class="tab">
+                  <header id="searchBar" class="wh-search">
+                    <div class="wh-container">
+                      <div class="wh-search-input">
+                        <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar searchbar-active">
+                          <label class="fa fa-search" for="search"></label>
+                          <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询">
+                          <i class="fa fa-times-circle-o"></i>
+                          <p class="fabu"><a href="#" class="button button-round active"><i class="fa fa-pencil-square-o"></i>新建</a></p>
+                        </form>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <section class="section-focum wh-section wh-section-bottomfixed">
+            <div class="webapp-form">
+              <div class="three-tab-app clearfix">
+                <div class="clearfix">
+                  <a href="#tab4" class="tab-link active">
+                    <span>月报</span>
+                  </a>
+                  <a href="#tab5" class="tab-link ">
+                    <span>周报</span>
+                  </a>
+                  <a href="#tab6" class="tab-link ">
+                    <!-- 切换到2个标签时增加的class "tab-link-rw" 并改变a 的宽度为50%-->
+                    <span>其他</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab4" class="tab active">
+                  <header id="searchBar" class="wh-search">
+                    <div class="wh-container">
+                      <div class="wh-search-input">
+                        <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar searchbar-active">
+                          <label class="fa fa-search" for="search"></label>
+                          <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询">
+                          <i class="fa fa-times-circle-o"></i>
+                          <p class="fabu"><a href="#" class="button button-round active"><i class="fa fa-pencil-square-o"></i>新建</a></p>
+                        </form>
+                      </div>
+                    </div>
+                  </header>
+                  
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab5" class="tab">
+                  <header id="searchBar" class="wh-search">
+                    <div class="wh-container">
+                      <div class="wh-search-input">
+                        <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar searchbar-active">
+                          <label class="fa fa-search" for="search"></label>
+                          <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询">
+                          <i class="fa fa-times-circle-o"></i>
+                          <p class="fabu"><a href="#" class="button button-round active"><i class="fa fa-pencil-square-o"></i>新建</a></p>
+                        </form>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="webapp-meeting webapp-report-view">
+                    <div class="meeting-notice">
+                      <div class="list-block">
+                        <ul class="">
+                          <li class="swipeout">
+                            <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                              <div>
+                                <span class="report-wait"></span>
+                                <img src="">
+                                <p>
+                                  【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                                  <span>[2015-03-20 13:30]</span>
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="swipeout">
+                            <a href="webapp-meeting-info.html" class="swipeout-content item-content" style="">
+                              <div>
+                                <img src="">
+                                <p>
+                                  【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                                  <span>[2015-03-20 13:30]</span>
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 3 -->
+                <div id="tab6" class="tab">
+                  <header id="searchBar" class="wh-search">
+                    <div class="wh-container">
+                      <div class="wh-search-input">
+                        <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar searchbar-active">
+                          <label class="fa fa-search" for="search"></label>
+                          <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询">
+                          <i class="fa fa-times-circle-o"></i>
+                          <p class="fabu"><a href="#" class="button button-round active"><i class="fa fa-pencil-square-o"></i>新建</a></p>
+                        </form>
+                      </div>
+                    </div>
+                  </header>
+
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="footer-focum wh-footer-btn row no-gutter">
+                  <a href="##" class="fbtn-matter col-50">
+                    <div><i class="fa fa-forum-home"></i></div><span>我的汇报</span></a>
+                  <a href="##" class="fbtn-cancle col-50">
+                    <div><i class="fa fa-view-modal"></i></div><span>下属汇报</span></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  $$(".footer-focum>a").click(function(){
+    var _this = $$(this);
+    var index = _this.index();
+
+    $$(".footer-focum>a").removeClass("fbtn-matter").addClass("fbtn-cancle");
+    _this.removeClass("fbtn-cancle").addClass("fbtn-matter");
+    $$(".section-focum").hide().eq(index).show();
+  });
+  
+  </script>
+</body>

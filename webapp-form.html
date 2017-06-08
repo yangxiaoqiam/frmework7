@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="theme-green">
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>表单页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+  <link rel="stylesheet" href="template/css/template.webapp-color.min.css" />
+ </head>
+
+<body class="grey-bg">
+  <!-- 右侧选项容器 -->
+  <div class="panel-overlay"></div>
+  <!-- 右侧选项内容 退回-->
+  <div class="panel panel-right panel-reveal"> 
+    <div class="panel-title">
+      <p>退回选项</p>
+    </div>
+    <div class="panel-con">
+      <p>退回环节</p>
+      <div class="panel-direct">
+        <p>总经理审批</p>
+      </div>
+    </div>
+    <div class="panel-con">
+      <p>退回人</p>
+      <div class="panel-direct">
+        <p>吴振全</p>
+      </div>
+    </div>
+    <div class="panel-con">
+      <p>退回人</p>
+      <div class="panel-textarea"> 
+        <textarea placeholder="请重新起草正文！">
+          
+        </textarea>
+        <em>333/300</em>
+      </div>
+    </div>
+    <div class="panel-btn">
+      <a href="#" class="panel-btn-a panel-close">确认退回</a> 
+    </div>
+  </div>
+  <!-- 右侧选项内容 确认发送-->
+  <div class="panel panel-right panel-reveal"> 
+    <!-- 退回 -->
+    <div class="panel-sub panel-return">
+      <div class="panel-title">
+        <p>退回选项</p>
+      </div>
+      <div class="panel-con">
+        <p>退回环节</p>
+        <div class="panel-direct">
+          <p>总经理审批</p>
+        </div>
+      </div>
+      <div class="panel-con">
+        <p>退回人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div>
+      <div class="panel-con">
+        <p>退回人</p>
+        <div class="panel-textarea"> 
+          <textarea placeholder="请重新起草正文！">
+            
+          </textarea>
+          <em>333/300</em>
+        </div>
+      </div>
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认退回</a> 
+      </div>
+    </div>
+    <!-- 发送 -->
+    <div class="panel-sub panel-send">
+      <div class="panel-title">
+        <p>发送选项</p>
+      </div>
+      <div class="panel-con">
+        <p>下一活动</p>
+        <div class="panel-direct">
+          <p>总经理审批</p>
+        </div>
+      </div>
+      <div class="panel-con">
+        <p>下一办理人</p>
+        <div class="panel-direct">
+          <p>吴振全、蒋敏、王光良、周玉梅 褚海静、徐玉倩、马良、周涛、 郭福玉、玉明 </p>
+        </div>
+      </div> 
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close panel-send-btn">确认发送</a> 
+      </div>
+    </div>
+    <!-- 加签 -->
+    <div class="panel-sub panel-add">
+      <div class="panel-title">
+        <p>加签选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择加签人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div> 
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a> 
+      </div>
+    </div> 
+    <!-- 催办 -->
+    <div class="panel-sub panel-press">
+      <div class="panel-title">
+        <p>催办选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择加签人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div> 
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a> 
+      </div>
+    </div>
+    <!-- 阅件 -->
+    <div class="panel-sub panel-read">
+      <div class="panel-title">
+        <p>阅件选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择阅件人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div> 
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a> 
+      </div>
+    </div>
+    <!-- 转办 -->
+    <div class="panel-sub panel-turn">
+      <div class="panel-title">
+        <p>转办选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择阅件人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div> 
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a> 
+      </div>
+    </div>
+
+  </div>
+
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-form">
+          <section class="page-content wh-section wh-section-bottomfixed">
+            <div class="webapp-form">
+              <div class="app-tabheader-line clearfix">
+                <div class="clearfix">
+                  <a href="#tab11" class="tab-link active">
+                    <span>流程表单</span>
+                  </a>
+                  <a href="#tab12" class="tab-link ">
+                    <span>流程图</span>
+                  </a>
+                  <a href="#tab13" class="tab-link ">
+                    <span>流程记录</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- 流程表单 -->
+                <div id="tab11" class="tab active">
+                  <div class="form-table">
+                    <table style="border-collapse:separate;border-spacing: 0 10px;">
+                      <tr>
+                        <td>
+                          <span>申请人<em>*</em>：</span>
+                        </td>
+                        <td>
+                          <p>李小林</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>部门：</span>
+                        </td>
+                        <td>
+                          <p>万户网络.万户软件.产品中心.主产品线. 产品组</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>申请类别<em>*</em>：</span>
+                        </td>
+                        <td>
+                          <span>事假</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>开始时间<em>*</em>：</span>
+                        </td>
+                        <td>
+                          <p>2016-09-14</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>申请事由：</span>
+                        </td>
+                        <td>
+                          <p>飞舸的控件组中有二维码扫描的调用方法，具体开发人员资讯苏俊如何使用。扫描前后的数据逻辑关系需要开发和项目经理自行沟通</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>上级领导审批：</span>
+                        </td>
+                        <td>
+                          <span>事假</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <!-- 流程图加载 -->
+                <div id="tab12" class="tab">  
+                  <p><img data-src="images/pic-test.jpg" width="100%" class="lazy lazy-fadeIn"></p> 
+                </div>
+                <!-- 流程图记录 -->
+                <div id="tab13" class="tab">
+                  <div class="form-table-record">
+                    <table style="border-collapse:separate;border-spacing: 0 10px;">
+                      <tr>
+                        <td width="33.2%">
+                          <div class="step-username">
+                            <p>发起人 </p>
+                            <em>发送时间</em>
+                          </div>
+                        </td>
+                        <td width="33.2%">
+                          <div class="step-name">
+                            <em class="skyblue">环节名称</em>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="step-recive">
+                            <p>接收人 </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="step-username">
+                            <p>袁迈克</p>
+                            <em>2016-08-17 17:35</em>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="step-name">
+                            <em class="skyblue">主管经理确认移动版签收</em>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="step-recive">
+                            <p>帅先生，袁迈克，赵小栋，杨先生 </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="step-username">
+                            <p>袁迈克 </p>
+                            <em>2016-08-17 17:35</em>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="step-name">
+                            <em class="skyblue">送主任审批</em>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="step-recive">
+                            <p>吴林风 </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="step-username">
+                            <p>袁迈克 </p>
+                            <em>2016-08-17 17:35</em>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="step-name">
+                            <em class="skyblue">送主任审批移动版签收</em>
+                          </div>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="step-username">
+                            <p>袁迈克 </p>
+                            <em>2016-08-17 17:35</em>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="step-name">
+                            <em class="green">流程办理完毕</em>
+                          </div>
+                        </td>
+                        <td>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-container">
+              <div class="wh-footer-btn row">
+                <div class="webapp-footer-linebtn">
+                  <div class="fl clearfix">
+                    <a href="#" class="panel-return-a">退回</a>
+                    <a href="#" class="panel-send-a">发送</a>
+                  </div> 
+                  <a id="fbtn-form-more" data-popover=".popover-links" class="fr fbtn-more link open-popover "><span>更多</span></a> 
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fbtn-more-nav popover popover-links" id="fbtn-more-con">
+    <div class="fbtn-more-nav-inner" id="fbtn-more-list">
+      <a href="#" class="panel-add-a close-popover">加签</a>
+      <a href="#" class="panel-turn-a fbtn-grey close-popover">转办</a>
+      <a href="#" class="panel-read-a close-popover">阅件</a>
+      <a href="#" class="panel-press-a close-popover">催办</a>
+    </div>
+  </div>
+  <script src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  //Export DOM7 to local variable to make it easy accessable
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //右下角菜单弹框
+  $$('#fbtn-more').on('click', function() {
+    var clickedLink = this;
+    myApp.popover('#fbtn-more-con', clickedLink);
+    myApp.closeModal('#fbtn-more-list a')
+  });
+ 
+  //退回
+  $$('.panel-return-a').on('click', function () { 
+    $$(".panel-sub").hide();
+    $$(".panel-return").show();
+    myApp.openPanel('right');
+  });
+  //发送
+  $$('.panel-send-a').on('click', function () {
+    $$(".panel-sub").hide();
+    $$(".panel-send").show();
+    myApp.openPanel('right');
+  });
+  //加签
+  $$('.panel-add-a').on('click', function () {
+    $$(".panel-sub").hide();
+    $$(".panel-add").show();
+    myApp.openPanel('right');
+  });
+  //转办
+  $$('.panel-turn-a').on('click', function () {
+    $$(".panel-sub").hide();
+    $$(".panel-turn").show();
+    myApp.openPanel('right');
+  });
+  //阅件
+  $$('.panel-read-a').on('click', function () {
+    $$(".panel-sub").hide();
+    $$(".panel-read").show();
+    myApp.openPanel('right');
+  });
+  //催办
+  $$('.panel-press-a').on('click', function () {
+    $$(".panel-sub").hide();
+    $$(".panel-press").show();
+    myApp.openPanel('right');
+  });
+ 
+  $$('.panel-close').on('click', function (e) {
+    myApp.closePanel();
+  });
+
+  //成功办理
+  var modal;
+
+  $$('.panel-send-btn').on('click', function(e) {
+    
+    modal = myApp.modal({
+      title: ' ',
+      text: ' ',
+      afterText: '<div class="panel-modal"><i class="fa fa-check-circle"></i><p>办理成功,返回中...</p></div>',
+      buttons: []
+    })
+    myApp.swiper($$(modal).find('.swiper-container'), {
+      pagination: '.swiper-pagination'
+    });
+ 
+    setTimeout(function() {
+      myApp.hidePreloader(); 
+    }, 2000); 
+    });
+ 
+  </script>
+</body>

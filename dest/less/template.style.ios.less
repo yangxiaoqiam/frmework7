@@ -1,0 +1,11 @@
+@import "ios/framework7.ios.less";
+@import "ios/framework7.ios.colors.less";
+
+  
+/* 解决 label+input radio checkbox 点击瞬间有灰色背景显示 */
+html:not(.watch-active-state) label.label-checkbox:active,
+html:not(.watch-active-state) label.label-radio:active,
+label.label-checkbox.active-state,
+label.label-radio.active-state {
+  background: transparent; 
+}

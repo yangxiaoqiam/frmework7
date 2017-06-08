@@ -1,0 +1,112 @@
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial,Sans-serif;
+@font-family-serif:Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:sans-serif;
+@font-family-pc:Microsoft YaHei;
+@font-size-base:62.5%;
+@text-color:#909090;
+@text-color-l:#d1d1d1;
+@text-color-d:#333333;
+@link-hover-color:#0078ff;
+@link-active-color:#21c164;
+@text-size-adjust-value:none;
+
+//* Reset bootstrap less
+@grid-gutter-width:1rem;
+.col(@index, @list) when (@index > @grid-columns) { // terminal
+  @{list} {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: .1rem;
+    // Inner gutter via padding
+    padding-left:  (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
+  }
+}
+
+
+/*global reset*/
+.text-size-adjust(@text-size-adjust-value){
+  text-size-adjust:@text-size-adjust-value;
+  -webkit-text-size-adjust:@text-size-adjust-value;
+  -ms-text-size-adjust:@text-size-adjust-value;
+  -moz-text-size-adjust:@text-size-adjust-value;
+}
+
+//** For icon
+@icon-prefix:icon-font;
+
+.blur(@blur-value){
+  -webkit-filter: blur(@blur-value); /* Chrome, Opera */
+  -moz-filter: blur(@blur-value);
+  -ms-filter: blur(@blur-value);
+  filter: blur(@blur-value);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=e(@blur-value), MakeShadow=false);
+}
+
+.text-size-adjust(@text-size-adjust-value){
+  text-size-adjust:@text-size-adjust-value;
+  -webkit-text-size-adjust:@text-size-adjust-value;
+  -ms-text-size-adjust:@text-size-adjust-value;
+  -moz-text-size-adjust:@text-size-adjust-value;
+}
+
+//input属性值
+.placeholder(@color,@align,@size) {
+  // Firefox
+  &::-moz-placeholder {
+    color: @color;
+    text-align: @align;
+    font-size: @size;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: @color; text-align: @align;font-size: @size; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; text-align: @align;font-size: @size;} // Safari and Chrome
+}
+
+
+
+.font-smoothing(@font-smoothing-value){
+  -webkit-font-smoothing: @font-smoothing-value;
+  font-smoothing:@font-smoothing-value;
+}
+
+.appearance(@appearance-value){
+  -webkit-appearance: @appearance-value;
+  -ms-appearance: @appearance-value;
+  -moz-appearance: @appearance-value;
+}
+
+.text-overfow(){
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.display-flex(@flex-ahead){
+  display:flex;
+  display: -webkit-flex;
+  flex-flow:@flex-ahead;
+  -webkit-flex-flow: @flex-ahead;
+}
+.flex(@flex-value){
+  flex:@flex-value;
+  -webkit-flex: @flex-value;
+  -webkit-box-flex:@flex-value;
+  -moz-box-flex:@flex-value;
+  -ms-box-flex:@flex-value;
+  -o-box-flex:@flex-value;
+  box-flex:@flex-value;
+}
+
+.halign(@value){
+  -webkit-box-pack: @value;
+  -ms-flex-pack: @value;
+  -webkit-justify-content: @value;
+  justify-content: @value;
+  -webkit-box-align: @value;
+  -ms-flex-align: @value;
+  -webkit-align-items: @value;
+  align-items: @value;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>表单页-编辑状态</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-form-edit">
+          <section class="wh-section wh-section-bottomfixed wh-duohang">
+            <div class="webapp-form">
+              <div class="app-tabheader-line clearfix">
+                <div class="clearfix">
+                  <a href="#tab11" class="tab-link active">
+                    <span>流程表单</span>
+                  </a>
+                  <a href="#tab12" class="tab-link ">
+                    <span>流程图</span>
+                  </a>
+                  <a href="#tab13" class="tab-link ">
+                    <!-- 切换到2个标签时增加的class "tab-link-rw" 并改变a 的宽度为50%-->
+                    <span>流程记录</span>
+                  </a>
+                </div>
+              </div>
+              <div class="form-table">
+                <table style="border-collapse:separate;border-spacing: 0 0px;">
+                  <tr class="duohang">
+                    <td>
+                      <span>申请人<em>*</em>：</span>
+                    </td>
+                    <td>
+                      <div>
+                        <input type="text" name="" placeholder="请选择" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>部门：</span>
+                    </td>
+                    <td>
+                      <div class="edit-direct">
+                        <input type="text" name="" placeholder="请选择" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>申请类别<em>*</em>：</span>
+                    </td>
+                    <td>
+                      <div class="edit-direct selectlist">
+                        <input type="text" name="" placeholder="事假" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>开始时间<em>*</em>：</span>
+                    </td>
+                    <td>
+                      <div class="edit-direct">
+                        <input type="text" name="" placeholder="请选择" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>申请事由：</span>
+                    </td>
+                    <td>
+                      <div>
+                        <textarea placeholder="请填写"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>申请事由：</span>
+                    </td>
+                    <td>
+                      <div>
+                        <textarea class="edit-txta edit-txta-l" placeholder="请输入文字"></textarea>
+                        <span class="edit-form-num">300</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>上级领导审批：</span>
+                    </td>
+                    <td>
+                      <div >
+                        <textarea placeholder="请填写" ></textarea>
+                        <div class="edit-direct" >
+                          <input type="" name="" placeholder="选择常用语" />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>上级领导审批：</span>
+                    </td>
+                    <td>
+                      <div class="" style="text-align:right;width: auto;">
+                        <textarea onfocus="changeFocus(this);" name="comment_input" id="comment_input" maxlength="50"></textarea>  
+                        <span class="xin-tj">手写</span>
+                        <span class="xin-tj">常用语</span>      
+                        <!-- <div class="edit-direct edit-direct2" style="display: inline-block;width: auto;">
+                          <div class="edit-sel-show" style="display: inline-block;">
+                            <span>常用语</span>
+                          </div>
+                          <select onchange="selectComment(this);" class="btn-bottom-pop"  prompt="">
+                            <option value="0">请选择常用语：&nbsp;&nbsp;&nbsp;&nbsp;</option> 
+                            <x:forEach select="$doc//officelist" var="selectvalue" >
+                            <option value='<x:out select="$selectvalue/text()"/>'><x:out select="$selectvalue/text()"/></option>
+                          </x:forEach>
+                          </select>
+                        </div> -->
+                      </div>
+
+                    </td>
+                  </tr>
+                  <!--<tr>
+                    <td colspan="2">
+                      <div class="" style="text-align:right;width: auto;">
+                        <img width="75%" id="shouxieDiv">
+                        <div>
+                          <span style="font-weight: normal;" class="xin-tj" onclick="openWenZiJinge();">文字</span>
+                          <span style="font-weight: normal;" class="xin-tj" onclick="openJinge();">手写</span>
+                        </div>
+                        <input type="hidden" name="commentType" value="1">
+                        <input type="hidden" name="comment_input" id="comment_input" value="">
+                      </div>
+                    </td>
+                  </tr> -->
+                  <tr>
+                    <td>
+                      <span>上级领导审批：</span>
+                    </td>
+                    <td>
+                      <ul class="edit-radio">
+                        <li class="">
+                          <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="紧急">
+                            <span class="edit-radio-l">紧急</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="加热">
+                            <span class="edit-radio-l">加热</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="匿名">
+                            <span class="edit-radio-l">匿名</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="签名">
+                            <span class="edit-radio-l">签名</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>上级领导审批：</span>
+                    </td>
+                    <td>
+                      <ul class="edit-upload">
+                        <li class="edit-upload-ed"><span><img src="images/trans.png"><em><i class="fa fa-minus-circle"></i></em></span></li>
+                        <li class="edit-upload-ed"><span class=""><img src="images/trans.png"><em><i class="fa fa-minus-circle"></i></em></span></li>
+                        <li class="edit-upload-ed"><span><img src="images/trans.png"><em><i class="fa fa-minus-circle"></i></em></span></li>
+                        <li class="edit-upload-in"><span><i class="fa fa-plus"></i></span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>select下拉：</span>
+                    </td>
+                    <td>
+                      <div style=" width: 80%; overflow: hidden; float: left; ">
+                       <select style="width: 110%;border: none;color: #666;">
+                        <option value="">请选择</option>
+                        <option value="1">22222</option>
+                        <option value="2">3333</option>
+                        <option value="3">4444</option>
+                       </select>
+                      </div>
+                      <span class="document-span">&#xf005;</span>
+                    </td>
+                   </tr>
+                </table>
+              </div>
+          </div>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-container">
+              <div class="wh-footer-btn row">
+                <div class="webapp-footer-linebtn">
+                  <div class="fl clearfix">
+                    <a href="#" data-panel="right" class="open-panel panel-return" >退回</a>
+                    <a href="#">发送</a>
+                  </div> 
+                  <a id="fbtn-more" data-popover=".popover-links" class="fr fbtn-more link open-popover"><span>更多</span></a> 
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

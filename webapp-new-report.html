@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>表单页-编辑状态</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-form-edit">
+          <section class="wh-section wh-section-bottomfixed new-report">
+            <div class="webapp-form">
+              <div class="form-table">
+                <table style="border-collapse:separate;border-spacing: 0 2px;">
+                  <tr>
+                    <td>
+                      <span>汇报类型：</span>
+                    </td>
+                    <td>
+                      <ul class="edit-radio">
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="实名">
+                            <span class="edit-radio-l">周报</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="匿名">
+                            <span class="edit-radio-l">月报</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="昵称">
+                            <span class="edit-radio-l">其他</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>被考核人：</span>
+                    </td>
+                    <td>
+                      <div class="person-name">
+                        <span>王强</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>部门：</span>
+                    </td>
+                    <td>
+                      <div class="person-name">
+                        <span>信息技术部</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>提交至：</span>
+                    </td>
+                    <td>
+                      <div class="edit-direct">
+                        <input type="text" name="" placeholder="请选择" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>汇报日期：</span>
+                    </td>
+                    <td>
+                      <div class="select-week">
+                        <div class="week">
+                          <input type="" name="">
+                          <a href="">上周</a>
+                        </div>
+                        <div class="week" style="margin-top: 5px;">
+                          <input type="" name="">
+                          <a>下周</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>汇报日期：</span>
+                    </td>
+                    <td>
+                      <div class="select-month">
+                        <div class="month">
+                          <input type="" name="">
+                          <a>上月</a>
+                          <a>上月</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>汇报日期：</span>
+                    </td>
+                    <td>
+                      <div class="time-from">
+                        <input class="time" type="" name="">
+                        <input class="time" type="" name="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>附件：</span>
+                    </td>
+                    <td>
+                      <ul class="edit-upload">
+                        <li class="edit-upload-ed"><span><img src="images/trans.png"><em><i class="fa fa-minus-circle"></i></em></span></li>
+                        <li class="edit-upload-in"><span><i class="fa fa-plus"></i></span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>汇报正文：</span>
+                    </td>
+                    <td>
+                      <div>
+                        <textarea placeholder="请填写"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>汇报正文：</span>
+                    </td>
+                    <td>
+                      <div>
+                        <textarea class="edit-txta edit-txta-l" placeholder="请输入文字"></textarea>
+                        <span class="edit-form-num">300</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-container">
+              <div class="wh-footer-btn row">
+                <div class="webapp-footer-linebtn">
+                  <div class="fl clearfix">
+                    <a href="#" data-panel="right" class="open-panel panel-return" >退回</a>
+                    <a href="#">发送</a>
+                  </div> 
+                  <a id="fbtn-more" data-popover=".popover-links" class="fr fbtn-more link open-popover"><span>更多</span></a> 
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="template/js/template.min.js"></script>
+<script type="text/javascript">
+//Export DOM7 to local variable to make it easy accessable
+var myApp = new Framework7();
+var $$ = Dom7;
+
+
+</script>
+</body>
+</html>
+
+
+

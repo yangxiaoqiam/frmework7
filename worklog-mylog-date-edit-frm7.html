@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html> 
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>会议室申请</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view view-content">
+      <div class="pages">
+        <div class="page">
+          <section class="wh-section wh-section-bottomfixed">
+            <article class="wh-edit wh-edit-forum">
+              <div>
+                <div class="meeting-room-apply">
+                  <div class="calendar hidden-print">
+                    <header>
+                      <h2 class="month"></h2> 
+                      <i class="btn-prev fa fa-angle-left"></i>
+                      <i class="btn-next fa fa-angle-right"></i>
+                    </header>
+                    <table>
+                      <thead class="event-days">
+                        <tr></tr>
+                      </thead>
+                      <tbody class="event-calendar">
+                        <tr class="one"></tr>
+                        <tr class="two"></tr>
+                        <tr class="three"></tr>
+                        <tr class="four"></tr>
+                        <tr class="five "></tr>
+                      </tbody>
+                    </table>
+                    <div class="list">
+                      <div class="day-event" date-day="2" date-month="2" date-year="2016" data-number="1"></div>
+                    </div>
+                  </div>
+                  <table class="wh-table-edit">
+                    <tr>
+                      <td>
+                        <p>
+                          <span>【填写日期】</span>
+                          <span>【时间段】</span>
+                          <span>【项目名称】</span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>
+                          <span>2016-04-11</span>
+                          <span>08:00-12:00 </span>
+                          <span>紫金山矿业集团项目</span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>
+                          <span>2016-04-09</span>
+                          <span>全天日志</span>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </article>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <a href="#" class="fbtn-matter col-100">写日志</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <script type="text/javascript" src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript" src="template/js/plugin/simplecalendar.js"></script>
+  <script type="text/javascript"> 
+    calendar.init('ajax', 'json/events.json'); 
+  </script>
+</body>
+
+</html>

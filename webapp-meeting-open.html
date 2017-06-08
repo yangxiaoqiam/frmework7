@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="theme-whred">
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>会议</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+  <link rel="stylesheet" href="template/css/template.webapp-color.min.css" /> 
+</head>
+
+<body class="">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-meeting-open">
+          <section class="meeting-open wh-section wh-section-bottomfixed">
+            <header class="meeting-open-head">
+              <div class="title">
+                <p>
+                   <em class="skyblue">专题会</em><span>关于财务共享实施方案讨论</span>
+                </p>
+              </div>
+            </header>
+            <div class="mail-edit">
+              <table class="wh-table-edit" style="border-collapse:separate;border-spacing:0;">
+                  <tr>
+                    <th class="">时间：</th>
+                    <td><span>2016-10-22</span><span>14:20至18:00</span></td>
+                  </tr>
+                  <tr>
+                    <th class="">地点：</th>
+                    <td><span>办公室二楼</span></td>
+                  </tr>
+                  <tr>
+                    <th class="">参会：</th>
+                    <td><span>领导班子</span><span>领导班子</span></td>
+                  </tr>
+                  <tr>
+                    <th class="">联系：</th>
+                    <td><span class="blue">韩乐</span><span class="blue">12234556778</span></td>
+                  </tr>
+                  <tr>
+                    <th class="">附件：</th>
+                    <td>
+                      <p class="download"><i class="fa fa-paperclip"></i>关于财务共享实施方案讨论.ppt</p>
+                      <p class="download"><i class="fa fa-paperclip"></i>关于财务共享实施方案讨论.ppt</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="">标签：</th>
+                    <td><span class="biaoqian">研讨会</span></td>
+                  </tr>
+                  <tr>
+                    <th class="">备注：</th>
+                    <td><span>需提前准备好发言内容</span></td>
+                  </tr>
+                  <tr>
+                    <th  colspan="2">议题1：</th>
+                  </tr>
+                  <tr>
+                    <td class="meeting-yti" colspan="2">
+                      <div class="yti-cont">
+                        <p class="p1"><span>黄定：</span><span>财务方案讨论</span></p>
+                        <p class="p2"><span>黄定：</span><span>财务方案讨论</span></p>
+                        <p class="p3"><i class="fa fa-paperclip"></i>关于财务共享实施方案讨论.ppt</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th  colspan="2">议题2：</th>
+                  </tr>
+                  <tr>
+                    <td class="meeting-yti" colspan="2">
+                      <div class="yti-cont">
+                        <p class="p1"><span>黄定：</span><span>财务方案讨论</span></p>
+                        <p class="p2"><span>黄定：</span><span>财务方案讨论</span></p>
+                        <p class="p3"><i class="fa fa-paperclip"></i>关于财务共享实施方案讨论.ppt</p>
+                      </div>
+                    </td>
+                  </tr>
+              </table>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <!-- <div class="lead-meeting-footer">
+              <a href="##">回执</a>
+              <a href="##" class="on">转发</a>
+              <a href="##" class="on">同步日程</a>
+          </div> -->
+          <footer class="wh-meeting wh-footer wh-footer-forum">
+            <div class="wh-container">
+              <div class="wh-footer-btn row">
+                <div class="webapp-footer-linebtn">
+                  <div class="fl clearfix">
+                    <a href="#" class="panel-return-a on">已回执</a>
+                    <a href="#" class="panel-send-a">已转发</a>
+                  </div> 
+                  <a style="width: 8rem" id="fbtn-form-more" data-popover=".popover-links" class="fr fbtn-more link open-popover "><span class="onl">同步日程</span></a> 
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fbtn-more-nav popover popover-links" id="fbtn-more-con">
+    <div class="fbtn-more-nav-inner" id="fbtn-more-list">
+      <a href="#" class="fbtn-matter close-popover"><i class="fa fa-eye"></i>子菜单一</a>
+      <a href="#" class="fbtn-matter close-popover"><i class="fa fa-eye"></i>子菜单一</a>
+      <a href="#" class="fbtn-matter close-popover"><i class="fa fa-plus"></i>子菜单一</a>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript" src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript" src="template/js/plugin/simplecalendar.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+  calendar.init('ajax', 'json/events.json');
+  </script>
+
+</body>

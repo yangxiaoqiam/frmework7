@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>预览文档错误页面</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page"> 
+            <section class="wh-section wh-section-bottomfixed">
+              <article class="wh-edit wh-edit-forum">
+                <div class="wh-file-openerror-img">
+                </div>
+                <div class="wh-file-openlist">
+                  <h2>请用第三方软件打开</h2>
+                  <ul>
+                    <li>
+                      <a href="#"><img src="template/images/wps.jpg" />
+                        <p>用wps打开</p>
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="#"><img src="template/images/cmail.jpg" />
+                        <p>用CMAIL打开</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="template/images/office.jpg" />
+                        <p>用office打开</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="template/images/officef.jpg" />
+                        <p>用office打开</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article> 
+            </section>
+            <footer class="wh-footer wh-footer-forum">
+              <div class="wh-wrapper">
+                <div class="wh-container">
+                  <div class="wh-footer-btn row">
+                    <a href="#" class="fbtn-matter col-100 ">取消</a>
+                  </div>
+                </div>
+              </div> 
+            </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body> 
+</html>

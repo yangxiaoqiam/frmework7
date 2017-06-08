@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>表单页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <div class="swiper-container swiper-1">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><span>Slide 1</span></div>
+              <div class="swiper-slide"><span>Slide 2</span></div>
+              <div class="swiper-slide"><span>Slide 3</span></div>
+              <div class="swiper-slide"><span>Slide 4</span></div>
+              <div class="swiper-slide"><span>Slide 5</span></div>
+              <div class="swiper-slide"><span>Slide 6</span></div>
+              <div class="swiper-slide"><span>Slide 7</span></div>
+              <div class="swiper-slide"><span>Slide 8</span></div>
+              <div class="swiper-slide"><span>Slide 9</span></div>
+              <div class="swiper-slide"><span>Slide 10</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="template/js/template.min.js"></script>
+  <style>
+      .swiper-slide {
+        background: #fff;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        line-height:120px;
+        text-align:center;
+      }
+      .swiper-slide span {
+        font-size:17px;
+      }
+      .swiper-container {
+        height: 120px;
+        margin: 0px 0 35px;
+      }
+    </style>
+    <script type="text/javascript">
+       var myApp = new Framework7(); 
+       // 1 Slide Per View, 50px Between
+        var mySwiper1 = myApp.swiper('.swiper-1', {
+          pagination:'.swiper-1 .swiper-pagination',
+          spaceBetween: 50
+        });
+    </script>
+</body>

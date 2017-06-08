@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>信息频道视图</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+ </head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-infomation-channel">
+          <section class="wh-section">
+            <div class="webapp-infomation-channel">
+              <!-- 搜索公用 -->
+              <header id="searchBar" class="wh-search">
+                <div class="wh-container">
+                  <div class="wh-search-input">
+                    <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                      <label class="fa fa-search" for="search"></label>
+                      <input id="searchBug" type="search" class="nomal-search"placeholder="请输入信息标题查询" />
+                      <i class="fa fa-times-circle-o"></i>
+                      
+                      <p class="fabu"><a href="#" class="button button-round active"><i class="fa fa-pencil-square-o"></i>发布</a></p>
+                    </form>
+                  </div>
+                </div>
+              </header>
+              <div>
+                <div class="list-block list-laber-block">
+                  <ul class="webapplist edit-radio">
+                    <li class="swipeout">
+                      <label class="label-radio item-content">
+                        <input type="radio" name="my-radio" value="实名">
+                        <span class="edit-radio-l"></span>
+                      </label>
+                      <a href="webapp-infomation-column.html" class="swipeout-content item-content">
+                        <div>
+                          <div class="tips green"><i class="fa fa-info-home"></i></div>
+                          <span>信息管理</span>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <div class="tips blue"><i class="fa fa-home"></i></div>
+                          <span>单位主页</span>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <div class="tips orange"><i class="fa fa-th-large"></i></div>
+                          <span>自定义信息频道1</span> 
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <div class="tips red"><i class="fa fa-th-large"></i></div>
+                          <span>自定义信息频道2</span>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row no-gutter">
+                  <a href="webapp-infomation.html" class="fbtn-cancle col-33">
+                    <div><i class="fa fa-info-home"></i></div><span>信息门户</span></a>
+                  <a href="webapp-infomation-channel-view.html" class="fbtn-matter col-33">
+                    <div><i class="fa fa-view-column"></i></div><span>栏目视图</span></a>
+                  <a href="webapp-infomation-push.html" class="fbtn-cancle col-33">
+                    <div><i class="fa fa-push"></i></div><span>@我推送</span></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  var mainView = myApp.addView('.view');
+  </script>
+  
+</body>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>会议</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-meeting-huizhi">
+          <section class="meeting-open wh-section wh-section-bottomfixed">
+            <header class="meeting-open-head">
+              <div class="title">
+                <p>
+                   <em class="skyblue">专题会</em><span>关于财务共享实施方案讨论</span>
+                </p>
+              </div>
+            </header>
+            <div class="app-tabheader-line-huizhi clearfix">
+                <div class="clearfix">
+                  <a href="###" class="meet-but join">参与</a>
+                  <a href="###" class="meet-but">不参与</a>
+                </div>
+            </div>
+            <div class="mail-edit">
+              <table class="wh-table-edit" style="border-collapse:separate;border-spacing:0;">
+                  <tr>
+                    <th class="" style="width: 10rem;border-bottom: 1px solid #ccc">本部门参会人：</th>
+                    <td>
+                        <input type="text" name="" class="" style="width: 75%;border: none;">
+                        <span class="document-span">&#xf005;</span>
+                    </td>
+                  </tr>
+                  <!-- <tr>
+                    <th class="" style="">备注：</th>
+                    <td>
+                      <div class="edit-txta-box">
+                        <textarea class="edit-txta edit-txta-l" placeholder="请输入文字"></textarea>
+                      </div>
+                    </td>
+                  </tr> -->
+                  <tr>
+                    <th class=""  colspan="2">备注：</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="padding: 0 1.5rem">
+                      <div class="edit-txta-box">
+                        <textarea class="edit-txta edit-txta-l" placeholder="请输入文字"></textarea>
+                      </div>
+                    </td>
+                  </tr>
+              </table>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <div class="lead-huizhi-footer">
+              <a href="##" class="on">提交</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript" src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript" src="template/js/plugin/simplecalendar.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+
+  var mainView = myApp.addView('.view');
+
+  var $$ = Dom7;
+  //顶部单选
+  $$(".meet-but").click(function(){
+         $$(".meet-but").removeClass("join");
+         if($$(this).hasClass("join")){
+            $$(this).removeClass("join");
+        }
+        else{
+            $$(this).addClass("join");
+        }
+    })
+
+  </script>
+
+</body>

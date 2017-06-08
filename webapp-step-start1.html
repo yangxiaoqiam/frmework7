@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>常用流程</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+</head>
+
+<body class="grey-bg">
+  <!-- 流程表单右侧选项容器 -->
+  <div class="panel-overlay"></div>
+  <!-- 流程表单右侧选项内容-->
+  <div class="panel panel-right panel-reveal">
+    <!-- 退回 -->
+    <div class="panel-sub panel-return">
+      <div class="panel-title">
+        <p>退回选项</p>
+      </div>
+      <div class="panel-con">
+        <p>退回环节</p>
+        <div class="panel-direct">
+          <p>总经理审批</p>
+        </div>
+      </div>
+      <div class="panel-con">
+        <p>退回人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div>
+      <div class="panel-con">
+        <p>退回人</p>
+        <div class="panel-textarea">
+          <textarea placeholder="请重新起草正文！">
+          </textarea>
+          <em>333/300</em>
+        </div>
+      </div>
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认退回</a>
+      </div>
+    </div>
+    <!-- 发送 -->
+    <div class="panel-sub panel-send">
+      <div class="panel-title">
+        <p>发送选项</p>
+      </div>
+      <div class="panel-con">
+        <p>下一活动</p>
+        <div class="panel-direct">
+          <p>总经理审批</p>
+        </div>
+      </div>
+      <div class="panel-con">
+        <p>下一办理人</p>
+        <div class="panel-direct">
+          <p>吴振全、蒋敏、王光良、周玉梅 褚海静、徐玉倩、马良、周涛、 郭福玉、玉明 </p>
+        </div>
+      </div>
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close panel-send-btn">确认发送</a>
+      </div>
+    </div>
+    <!-- 加签 -->
+    <div class="panel-sub panel-add">
+      <div class="panel-title">
+        <p>加签选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择加签人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div>
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a>
+      </div>
+    </div>
+    <!-- 催办 -->
+    <div class="panel-sub panel-press">
+      <div class="panel-title">
+        <p>催办选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择加签人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div>
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a>
+      </div>
+    </div>
+    <!-- 阅件 -->
+    <div class="panel-sub panel-read">
+      <div class="panel-title">
+        <p>阅件选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择阅件人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div>
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a>
+      </div>
+    </div>
+    <!-- 转办 -->
+    <div class="panel-sub panel-turn">
+      <div class="panel-title">
+        <p>转办选项</p>
+      </div>
+      <div class="panel-con">
+        <p>选择阅件人</p>
+        <div class="panel-direct">
+          <p>吴振全</p>
+        </div>
+      </div>
+      <div class="panel-btn">
+        <a href="#" class="panel-btn-a panel-close">确认加签</a>
+      </div>
+    </div>
+  </div>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-step-start">
+          <!-- 流程待办 -->
+          <section class="section-step wh-section wh-section-bottomfixed">
+            <div class="step-todo">
+              <div class="app-tabheader-line clearfix">
+                <!-- 关联到第一个tab, 默认激活 -->
+                <div class="clearfix">
+                  <a href="#tab-step-todo1" class="tab-link active">
+                    <span>待办<em>19</em></span>
+                  </a>
+                  <a href="#tab-step-todo2" class="tab-link ">
+                    <span>待阅件<em>0</em></span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab-step-todo1" class="tab active">
+                  <div class="step-todo-file">
+                    <header id="searchBar" class="wh-search">
+                      <div class="wh-container">
+                        <div class="wh-search-input">
+                          <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                            <label class="fa fa-search" for="search"></label>
+                            <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="todo-list">
+                      <div class="list-block">
+                        <ul>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab-step-todo2" class="tab">
+                  <div class="step-todo-file">
+                    <header id="searchBar" class="wh-search">
+                      <div class="wh-container">
+                        <div class="wh-search-input">
+                          <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                            <label class="fa fa-search" for="search"></label>
+                            <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="todo-list">
+                      <div class="list-block">
+                        <ul>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题2  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题3  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+          <!-- 流程已办 -->
+          <section class="section-step wh-section wh-section-bottomfixed">
+            <div class="step-todo">
+              <div class="app-tabheader-line clearfix">
+                <!-- 关联到第一个tab, 默认激活 -->
+                <div class="clearfix">
+                  <a href="#tab-step-over1" class="tab-link active">
+                    <span>已办件<em>19121</em></span>
+                  </a>
+                  <a href="#tab-step-over2" class="tab-link ">
+                    <span>已阅件<em>334</em></span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab-step-over1" class="tab active">
+                  <div class="step-todo-file">
+                    <header id="searchBar" class="wh-search">
+                      <div class="wh-container">
+                        <div class="wh-search-input">
+                          <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                            <label class="fa fa-search" for="search"></label>
+                            <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="todo-list">
+                      <div class="list-block">
+                        <ul>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                  <em class="skyblue sky-person">办理人</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="green">办理完毕</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab-step-over2" class="tab">
+                  <div class="step-todo-file">
+                    <header id="searchBar" class="wh-search">
+                      <div class="wh-container">
+                        <div class="wh-search-input">
+                          <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                            <label class="fa fa-search" for="search"></label>
+                            <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="todo-list">
+                      <div class="list-block">
+                        <ul>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题2  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题3  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                          <li class="swipeout">
+                            <a href="#" class="swipeout-content item-content">
+                              <div class="webapp-div">
+                                <strong> 流程标题4  </strong>
+                                <P>
+                                  <span>发送时间</span>
+                                  <em class="skyblue">办理状态</em>
+                                </P>
+                              </div>
+                              <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                            </a>
+                            <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 我的流程 -->
+          <section class="section-step wh-section wh-section-bottomfixed">
+            <div class="step-todo">
+              <header id="searchBar" class="wh-search">
+                <div class="wh-container">
+                  <div class="wh-search-input">
+                    <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                      <label class="fa fa-search" for="search"></label>
+                      <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                    </form>
+                  </div>
+                </div>
+              </header>
+              <div class="todo-list">
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>
+                      流程标题 
+                    </strong>
+                          <P>
+                            <span>发送时间</span>
+                            <em class="skyblue">办理状态</em>
+                          </P>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>
+                      在国机集团2014-2015年度先进基层党组织、优秀共产党员和优秀党务工作者拟表彰对象公示  
+                    </strong>
+                          <P>
+                            <span>发送时间</span>
+                            <em class="pink">办理状态</em>
+                            <em class="green">办理完成</em>
+                          </P>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div class="webapp-div">
+                          <strong>
+                      关于拟推荐全国老干部工作先进集体的公示  
+                    </strong>
+                          <P>
+                            <span>发送时间</span>
+                            <em class="green">办理状态</em>
+                          </P>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 发起流程 -->
+          <section class="section-step wh-section wh-section-bottomfixed show">
+            <div class="step-strat">
+              <div class="app-tabheader-line clearfix">
+                <div class="clearfix">
+                  <a href="#tab-step-start1" class="tab-link active">
+                    <span>常用流程</span>
+                  </a>
+                  <a href="#tab-step-start2" class="tab-link ">
+                    <span>全部分类</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Tabs, 标签内容区容器 -->
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab-step-start1" class="tab active">
+                  <div class="list-block">
+                    <ul class="step-common">
+                      <li class="swipeout">
+                        <a href="webapp-form.html" class="swipeout-content item-content">
+                          <div class="webapp-div clearfix">
+                            <span>1</span>
+                            <div>
+                              <p>加班申请流程 </p>
+                              <em>已发起127次</em>
+                            </div>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                      </li>
+                      <li class="swipeout">
+                        <a href="webapp-form.html" class="swipeout-content item-content">
+                          <div class="webapp-div clearfix">
+                            <span>2</span>
+                            <div>
+                              <p>加班申请流程加班申请流程加班申请流程加班申请流程加班申请流程加班申请流程 </p>
+                              <em>已发起127次</em>
+                            </div>
+                          </div>
+                          <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                        </a>
+                        <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab-step-start2" class="tab">
+                  <div class="step-all">
+                    <!-- 普通搜索公用 -->
+                    <header id="searchBar" class="wh-search">
+                      <div class="wh-container">
+                        <div class="wh-search-input">
+                          <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                            <label class="fa fa-search" for="search"></label>
+                            <input id="searchBug" type="search" class="nomal-search" placeholder="请输入信息标题查询" />
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div id="tab-step-over2" class="tab active">
+                        <ul>
+                          <li class="swipeout transitioning">
+                            <div class="wh-cate-libox wh-cate-libox1 " >
+                              <a href="#" class="item-content item-open">
+                                <p>
+                                  <strong>行政办公类（4）</strong>
+                                </p>
+                              </a>
+                            </div>
+                            <div class="wh-article-lists" style="display: none;">
+                              <div class="accordion-item-content" style="height: auto;">
+                                <div class="cate-lists">
+                                  <ul style="padding: 0">
+                                    <li class="accordion-item">
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="swipeout transitioning">
+                            <div class="wh-cate-libox wh-cate-libox1 " >
+                              <a href="#" class="item-content item-open">
+                                <p>
+                                  <strong>行政办公类（4）</strong>
+                                </p>
+                              </a>
+                            </div>
+                            <div class="wh-article-lists" style="display: none;">
+                              <div class="accordion-item-content" style="height: auto;">
+                                <div class="cate-lists">
+                                  <ul style="padding: 0">
+                                    <li class="accordion-item">
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                      <div class="webapp-div">
+                                        <i></i>
+                                        <span>小鱼办公设备销售申请流程</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="footer-step wh-footer-btn row no-gutter">
+                  <a href="##" class="fbtn-cancle col-25">
+                    <div><i class="fa fa-step-pre"></i></div><span>待办</span></a>
+                  <a href="##" class="fbtn-cancle col-25">
+                    <div><i class="fa fa-step-over"></i></div><span>已办</span></a>
+                  <a href="##" class="fbtn-cancle col-25">
+                    <div><i class="fa fa-step-mine"></i></div><span>我的</span></a>
+                  <a href="##" class="fbtn-matter col-25">
+                    <div><i class="fa fa-share-alt"></i></div><span>发起</span></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+
+  //右下角菜单弹框
+  $$('#fbtn-form-more').on('click', function() {
+    console.log("ss1111");
+    var clickedLink = this;
+    var popoverHTML = '<div class="fbtn-more-nav popover popover-links" id="fbtn-form-more-con">' +
+      '<div class="fbtn-more-nav-inner" id="fbtn-form-more-list">' +
+      '<a href="##" class="panel-add-a close-popover">加签</a>' +
+      '<a href="##" class="panel-turn-a fbtn-grey close-popover">转办</a>' +
+      '<a href="##" class="panel-read-a close-popover">阅件</a>' +
+      '<a href="##" class="panel-press-a close-popover">催办</a>' +
+      '</div></div>';
+    myApp.popover(popoverHTML, clickedLink);
+    myApp.closeModal('#fbtn-form-more-list a');
+  });
+
+  //加签
+  $$('.panel-add-a').on('click', function() {
+    $$(".panel-sub").hide();
+    $$(".panel-add").show();
+    myApp.openPanel('right');
+  });
+  //转办
+  $$('.panel-turn-a').on('click', function() {
+    $$(".panel-sub").hide();
+    $$(".panel-turn").show();
+    myApp.openPanel('right');
+  });
+  //阅件
+  $$('.panel-read-a').on('click', function() {
+    $$(".panel-sub").hide();
+    $$(".panel-read").show();
+    myApp.openPanel('right');
+  });
+  //催办
+  $$('.panel-press-a').on('click', function() {
+    $$(".panel-sub").hide();
+    $$(".panel-press").show();
+    myApp.openPanel('right');
+  });
+  //关闭
+  $$('.panel-close').on('click', function(e) {
+    myApp.closePanel();
+  });  
+  //退回
+  $$('.panel-return-a').on('click', function() {
+    $$(".panel-sub").hide();
+    $$(".panel-return").show();
+    myApp.openPanel('right');
+  });
+  //发送
+  $$('.panel-send-a').on('click', function() {
+        $$(".panel-sub").hide();
+        $$(".panel-send").show();
+        myApp.openPanel('right');
+
+        //成功办理
+        var modal;
+
+        $$('.panel-send-btn').on('click', function(e) {
+
+          modal = myApp.modal({
+            title: ' ',
+            text: ' ',
+            afterText: '<div class="panel-modal"><i class="fa fa-check-circle"></i><p>办理成功,返回中...</p></div>',
+            buttons: []
+          })
+          myApp.swiper($$(modal).find('.swiper-container'), {
+            pagination: '.swiper-pagination'
+          });
+
+          setTimeout(function() {
+            myApp.hidePreloader();
+          }, 2000);
+        });
+  }); 
+
+  //底部切换
+  $$(".footer-step>a").click(function(){
+    var _this = $$(this);
+    var index = _this.index();
+
+    $$(".footer-step>a").removeClass("fbtn-matter").addClass("fbtn-cancle");
+    _this.removeClass("fbtn-cancle").addClass("fbtn-matter");
+    $$(".section-step").hide().eq(index).show();
+  }); 
+
+
+  $$("i.fa-check-circle").click(function(){
+       if($$(this).hasClass("fa-check-circle-active")){
+          $$(this).removeClass("fa-check-circle-active");
+      }
+      else{
+          $$(this).addClass("fa-check-circle-active");
+      }
+
+  })
+
+
+  $$("div.wh-cate-libox1").click(function(){
+       if($$(this).hasClass("wh-cate-libox-active")){
+          $$(this).removeClass("wh-cate-libox-active");
+          $$(this).next(".wh-article-lists").hide(10000);
+
+      }
+      else{
+          $$(this).addClass("wh-cate-libox-active");
+           $$(this).next(".wh-article-lists").show(10000);
+      }
+  })
+  </script>
+</body>

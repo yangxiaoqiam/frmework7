@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>待办流程</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+ </head>
+
+<body>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-selectpeople">
+          <section class="wh-section wh-section-bottomfixed focum-ban">
+            <header id="searchBar" class="wh-search">
+              <div class="wh-container">
+                <div class="wh-search-input">
+                  <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar">
+                    <label class="fa fa-search" for="search"></label>
+                    <input id="searchBug" type="search" class="nomal-search" placeholder="请输入帖子标题">
+                  </form>
+                </div>
+              </div>
+            </header>
+            <div class="webapp-infomation-column" style="background-color: #efeff4;padding-bottom: 5px;">
+              <div class="list-block">
+                <ul class="focum-ban-ul">
+                  <li class="swipeout transitioning">
+                    <a href="#" class="swipeout-content item-content" style="">
+                      <div class="webapp-div">
+                        <div class="tips red">部</div>
+                        <span>部门通知</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more" style="transform: translate3d(0px, 0px, 0px);">更多</a></div>
+                  </li>
+                  <li class="swipeout transitioning">
+                    <a href="#" class="swipeout-content item-content" style="">
+                      <div class="webapp-div">
+                        <div class="tips red">部</div>
+                        <span>部门通知</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more" style="transform: translate3d(0px, 0px, 0px);">更多</a></div>
+                  </li>
+                  <li class="swipeout transitioning">
+                    <a href="#" class="swipeout-content item-content" style="">
+                      <div class="webapp-div">
+                        <div class="tips red">部</div>
+                        <span>部门通知</span>
+                      </div>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-more" style="transform: translate3d(0px, 0px, 0px);">更多</a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="wh-container">
+              <div class="wh-article-lists">
+                <ul id="forum_list">
+                  <li>
+                      <strong class="forum-avatar">
+                        <img src="/defaultroot/upload/peopleinfo/2016082414550891028224404_small.jpeg">
+                         
+                      </strong>
+                      <p>
+                          <a>朱潇潇&nbsp;&nbsp;haha</a>
+                          <span>&nbsp;2016-10-24 18:23</span>
+                      </p>
+                      <em class="rate-zero">0</em>
+                  </li>
+                  <li>
+                      <strong class="forum-avatar">
+                        <img src="/defaultroot/upload/peopleinfo/2016082414550891028224404_small.jpeg">
+                         
+                      </strong>
+                      <p>
+                          <a>朱潇潇&nbsp;&nbsp;02</a>
+                          <span>&nbsp;2016-10-21 17:04</span>
+                      </p>
+                      <em class="">6</em>
+                  </li>
+                  <li>
+                      <strong class="forum-avatar">
+                        <img src="/defaultroot/upload/peopleinfo/2016102111095515927699777_small.png">
+                         
+                      </strong>
+                      <p>
+                          <a>杨超&nbsp;&nbsp;01</a>
+                          <span>&nbsp;2016-10-21 17:03</span>
+                      </p>
+                      <em class="rate-zero">0</em>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+
+  </script>
+</body>

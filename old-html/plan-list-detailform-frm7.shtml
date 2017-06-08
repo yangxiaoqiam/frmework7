@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>计划列表展开表单页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <section class="wh-section wh-section-bottomfixed">
+            <article class="wh-edit wh-edit-forum">
+              <div>
+                <table class="wh-table-edit">
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>计划编号：</th>
+                    <td>
+                      <div class="edit-ipt-a-arrow edit-ipt-reslut-r"><a href="##">A0099</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>计划名称：</th>
+                    <td>
+                      <div class="edit-ipt-a-arrow"><a href="##">体育用品采购计划</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>申请部门：</th>
+                    <td>
+                      <div class="edit-ipt-a-arrow"><a href="##">集团公司</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>报销类型：</th>
+                    <td>
+                        <ul class="edit-radio">
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="本部门">
+                            <span class="edit-radio-l">本部门</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="集团">
+                            <span class="edit-radio-l">集团</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="抵账">
+                            <span class="edit-radio-l">抵账</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="label-radio item-content">
+                            <input type="radio" name="my-radio" value="其他">
+                            <span class="edit-radio-l">其他</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><i class="fa fa-asterisk"></i>计划明细：</th>
+                    <td>
+                      <div class="edit-ipt-a-arrow">
+                        <a href="#" class="edit-slt-r">当前6条数据</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>领导审批： </th>
+                    <td>
+                      <div class="edit-ipt-a-arrow edit-ipt-reslut-l">
+                        <strong>同意。</strong>
+                        <span>徐泽红（2015-3-20 11:20）</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

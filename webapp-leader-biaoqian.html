@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>常用流程</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+</head>
+
+<body>
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-leader-biaoqian">
+          <section class="wh-section wh-section-bottomfixed section-leader">
+             <header class="wh-leader-search">
+              <div class="search-fl"><span>标签：</span></div>
+              <div class="wh-search-input search-fr">
+                  <form method="get" data-search-list=".list-container" data-search-in=".item-title" class="searchbar searchbar-init nomal-searchbar searchbar-active">
+                    <input id="searchBug" type="search" class="nomal-search" placeholder="请输入">
+                  </form>
+              </div>
+              <a href="###" class="leader-day-tianjia">确定</a>
+            </header>
+            <div class="todo-list">
+              <div class="list-block">
+                <ul>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content" style="">
+                      <span class="span-grey">研讨会</span>
+                      <label class="label-radio item-content">
+                        <span class="edit-radio-l"></span>
+                      </label>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-delete" style="left: 0px;">删除</a>
+                    </div>
+                  </li>
+                  <li class="swipeout">
+                    <a href="#" class="swipeout-content item-content" style="">
+                      <span class="span-grey"><em>财务</em></span>
+                      <label class="label-radio item-content">
+                        <span class="edit-radio-l"></span>
+                      </label>
+                    </a>
+                    <div class="swipeout-actions-right"><a href="#" class="swipeout-delete" style="left: 0px;">删除</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+
+
+  $$("div.list-block li").click(function(){
+        if($$(this).hasClass("radio-active")){
+            $$(this).removeClass("radio-active");
+        }
+        else{
+           var liList =  $$("div.list-block li");
+          $$("div.list-block li").each(function(){
+            $$(this).removeClass("radio-active");
+          });
+            $$(this).addClass("radio-active");
+        } 
+    })
+
+  </script>
+  
+</body>

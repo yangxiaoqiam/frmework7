@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="theme-whskyblue">
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>信息门户</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-color.min.css" />
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-zibiao">
+          <section class="show wh-section wh-section-bottomfixed" data-ptr-distance="40">
+            <!-- 顶部滑动头部 -->
+            <div class="wh-zibiao-head">
+              <div class="swiper-container swiper-1"> 
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><span>1</span></div>
+                  <div class="swiper-slide"><span>2</span></div>
+                  <div class="swiper-slide"><span>3</span></div>
+                  <div class="swiper-slide"><span>4</span></div>
+                  <div class="swiper-slide"><span>5</span></div>
+                  <div class="swiper-slide"><span>6</span></div>
+                  <div class="swiper-slide"><span>7</span></div>
+                  <div class="swiper-slide"><span>8</span></div>
+                  <div class="swiper-slide"><span>9</span></div>
+                  <div class="swiper-slide"><span>10</span></div>
+                  <div class="swiper-slide"><span>11</span></div>
+                  <div class="swiper-slide"><span>12</span></div>
+                </div>
+              </div>
+            </div>
+            <!-- 顶部滑动头部 -->
+            
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //swipe图片切换
+  var mySwiper_info = myApp.swiper('.mySwiper_info', { 
+    pagination:'.mySwiper_info .swiper-pagination',
+    spaceBetween: 0 //控制图片拖动是显示的空隙 无空隙为0
+  });
+
+  //顶部单选
+  $$(".app-tabheader-line2 div a").click(function(){
+     $$(".app-tabheader-line2 div a").removeClass("read-clock");
+     if($$(this).hasClass("read-clock")){
+      $$(this).removeClass("read-clock");
+    }
+    else{
+      $$(this).addClass("read-clock");
+    }
+  })
+
+    // 头部互动切换
+    var mySwiper1 = myApp.swiper('.swiper-1', {
+      pagination: '.swiper-1 .swiper-pagination',
+      spaceBetween: 0,
+      slidesPerView: 6
+    });
+
+    $$(".swiper-1 .swiper-slide").click(function(){
+       $$(".swiper-1 .swiper-slide").removeClass("active");
+       if($$(this).hasClass("active")){
+        $$(this).removeClass("active");
+      }
+      else{
+        $$(this).addClass("active");
+      }
+    })
+  </script>
+</body>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>公文</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-document">
+          <section class="wh-section">
+            <div class="webapp-document list-a">
+              <div class="doc-list">
+                <div class="list-block">
+                  <ul class="webapplist">
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <i class="point"></i>
+                          <p>关于下发《深入开展</p>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <i class="point"></i>
+                          <p>关于下发《深入开展“三严三</p>
+                        </div>
+
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                    </li>
+                    <!-- <li class="swipeout">
+                      <p>关于下发《深入开展“三严三实”专题教育的实施方案》的通知</p>
+                      <em class="grey-color">2016-08-16 13:41</em>
+                      <em class="yellow-color">HTO党发（2015）1号</em>
+                      <em class="blue-color">党群工作部</em>
+                    </li> -->
+                  </ul>
+                </div>
+                <div class="no-message">暂无可用的会议申请ezFLOW流程！</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script>
+  var myApp = new Framework7();
+
+  var $$ = Dom7;
+
+  $$('。swipeout-more').on('click', function() {
+    myApp.alert('there is more to do ');
+  });
+   
+  </script>
+</body>

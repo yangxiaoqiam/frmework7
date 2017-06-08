@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title></title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-self-test">
+          <section class="wh-section page-content">
+            <div class="step-todo step-select">
+              <div class="step-todo-file">
+                <div class="todo-list">
+                  <div class="list-block">
+                    <ul>
+                      <li class="swipeout">
+                        <div class="wh-cate-libox wh-cate-libox1" onclick="loadNextOrgAndSubEmp('62',this);">
+                          <a class="">
+                            <em class="sg-blue"></em>
+                            <p>
+                              <strong>华宇万户</strong>
+                            </p>
+                          </a>
+                        </div>
+                        <div class="wh-article-lists" style="display: none;">
+                          <ul>
+                            <li>
+                              <i class="fa fa-check-circle"></i>
+                              <strong class="contact-icon"><img src="/defaultroot/upload/peopleinfo/2016082514584014093375702.png">
+                              </strong>
+                              <p><a class="contact-author">马方洁</a></p>
+                            </li>
+                          </ul>
+                        </div>
+                        <ul class="select-box" style="display: none;">
+                          <li>
+                            <div class="wh-cate-libox wh-cate-libox2 wh-cate-libox-active" wh-cate-libox-empty="" onclick="loadNextOrgAndSubEmp(402,this);">
+                              <a class=""><em class="sg-pink"></em><p>
+                                <strong>华宇信息</strong></p>
+                              </a>
+                            </div>
+                            <div class="wh-article-lists wh-article-lists2" style="display: none;">
+                              <ul>
+                                <li>
+                                  <i class="fa fa-check-circle" data-empid="1162," data-empname="陶玉君,"></i><strong class="contact-icon"><img src="/defaultroot/upload/peopleinfo/2016052411162412646651556.gif">
+                                  </strong>
+                                  <p><a class="contact-author">陶玉君</a></p>
+                                </li>
+                              </ul>
+                            </div>
+                            <ul class="select-box" style="display: none;">
+                              <li>
+                                <div class="wh-cate-libox wh-cate-libox2 wh-cate-libox-active" wh-cate-libox-empty="" onclick="loadNextOrgAndSubEmp(402,this);">
+                                  <a class=""><em class="sg-pink"></em><p>
+                                    <strong>华宇信息</strong></p>
+                                  </a>
+                                </div>
+                                <div class="wh-article-lists wh-article-lists2" style="display: none;">
+                                  <ul>
+                                    <li>
+                                      <i class="fa fa-check-circle" data-empid="1162," data-empname="陶玉君,"></i><strong class="contact-icon"><img src="/defaultroot/upload/peopleinfo/2016052411162412646651556.gif">
+                                      </strong>
+                                      <p><a class="contact-author">陶玉君</a></p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <ul style="display: none;"></ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+
+  $$("i.fa-check-circle").click(function(){
+       if($$(this).hasClass("fa-check-circle-active")){
+          $$(this).removeClass("fa-check-circle-active");
+      }
+      else{
+          $$(this).addClass("fa-check-circle-active");
+      }
+
+  })
+  $$("div.wh-cate-libox1").click(function(){
+       if($$(this).hasClass("wh-cate-libox-active")){
+          $$(this).removeClass("wh-cate-libox-active");
+          $$('div.wh-article-lists').css('display','none' );
+          $$('ul.select-box').css('display','none' );
+
+      }
+      else{
+          $$(this).addClass("wh-cate-libox-active");
+          $$('div.wh-article-lists').css('display','block' );
+          $$('ul.select-box').css('display','block' );
+          $$('ul.select-box div.wh-article-lists').css('display','none' );
+      }
+  })
+
+  $$("div.wh-cate-libox2").click(function(){
+       if($$(this).hasClass("wh-cate-libox-active")){
+          $$(this).removeClass("wh-cate-libox-active");
+          $$('div.wh-article-lists2').css('display','none' );
+      }
+      else{
+          $$(this).addClass("wh-cate-libox-active");
+          $$('div.wh-article-lists2').css('display','block' );
+      }
+  })
+  </script>
+</body>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html> 
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>查看日志</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view view-content">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section-bottomfixed">
+            <article class="wh-edit wh-edit-forum wh-article-log-edit wh-article-log">
+              <div>
+                <table class="wh-table-edit">
+                  <tbody>
+                    <tr>
+                      <th>结果：</th>
+                      <td>
+                        <input class="edit-ipt-r" type="text" placeholder="请填写" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>备注：</th>
+                      <td>
+                        <div class="edit-txta-box">
+                          <textarea class="edit-txta edit-txta-l" placeholder="请填写"></textarea>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="log-notice-con">
+                  <p>留言：</p>
+                  <em>[留言人姓名]：</em><em class="color-grey">2016-09-02</em>
+                  <br/>
+                  <p>[留言内容]</p>
+                </div>
+                <div class="log-notice-con">
+                  <p>留言：</p>
+                  <em>[留言人姓名]：</em><em class="color-grey">2016-09-02</em>
+                  <br/>
+                  <p>[留言内容]</p>
+                </div>
+              </div>
+            </article>
+          </section>
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="wh-footer-btn row">
+                  <a href="#" class="fbtn-cancel col-50">修改日志</a>
+                  <a href="#" class="fbtn-matter col-50 log-submit">提交留言</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <script src="template/js/template.min.js"></script>
+
+  <script type="text/javascript">
+
+    var myApp = new Framework7();
+    var $$ = Dom7;
+
+    $$('.log-submit').on('click', function () {
+      myApp.prompt('请输入留言内容', ' ', function (value) {
+          myApp.alert('您已确认');
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

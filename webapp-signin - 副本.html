@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>签到</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-signin">
+          <!-- 签到 -->
+          <section class="section-signin wh-section wh-section-bottomfixed show">
+            <div class="webapp-sigin">
+              <header class="wh-clock-header">
+                <div class="bg">
+                  <img src="images/bg_header.png">
+                </div>
+                <strong class="document-icon">
+                    <img src="images/avator.png">
+                  </strong>
+                <div class="wh-clock-info">
+                  <h3>李小林</h3>
+                  <p>您本日尚未签到！</p>
+                </div>
+              </header>
+              <div class="location">
+                <div class="info">
+                  <i class="fa fa-map-marker"></i>
+                  <div>和地大厦</div>
+                  <div>合肥市马鞍山路南</div>
+                </div>
+                <div class="btn-wrap"><a href="#" class="btn">查看地图</a></div>
+              </div>
+              <ul class="edit-upload clearfix">
+                <li class="edit-upload-in"><span class=""><i class="fa fa-plus"></i></span></li>
+                <li class="edit-upload-ed"><span><img src="images/trans.png"><em><i class="fa fa-minus-circle"></i></em></span></li>
+              </ul>
+              <article class="signin-remark">
+                <!-- <div contenteditable="true">签到备注</div> -->
+                <table class="wh-table-edit" style="border-collapse:separate;border-spacing: 0 2px;">
+                  <tbody>
+                      <tr>
+                          <td class="">
+                              帖子标题<i class="fa fa-asterisk"></i>：
+                          </td>
+                          <td>
+                              <input class="input-alone" type="text" placeholder="请输入">
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+                <a href="webapp-signin-note.html">
+                  <button>签到</button>
+                </a>
+              </article>
+            </div>
+          </section>
+          <!-- 签到记录 -->
+          <section class="section-sigin pull-to-refresh-content wh-section wh-section-bottomfixed" data-ptr-distance="40">
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+              <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <div class="webapp-sigin">
+              <div class="signin-note-list">
+                <div class="list-block">
+                  <ul class="webapp-list">
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <i class="fa fa-sign"></i>
+                          <span>2016-08-29</span>
+                          <em>打卡3次</em>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <i class="fa fa-sign"></i>
+                          <span>2016-08-29</span>
+                          <em>打卡3次</em>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                    <li class="swipeout">
+                      <a href="#" class="swipeout-content item-content">
+                        <div>
+                          <i class="fa fa-sign"></i>
+                          <span>2016-08-29</span>
+                          <em>打卡3次</em>
+                        </div>
+                        <div class="item-after"><i class="fa fa-angle-right"></i></div>
+                      </a>
+                      <div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <footer class="wh-footer wh-footer-forum">
+            <div class="wh-wrapper">
+              <div class="wh-container">
+                <div class="footer-signin wh-footer-btn row no-gutter">
+                  <a href="##" class="fbtn-matter col-50">
+                    <div><i class="fa fa-map-marker"></i></div><span>定位签到</span></a>
+                  <a href="##" href="#tab2" class="fbtn-cancle col-50">
+                    <div><i class="fa fa-sign-log"></i></div><span>签到记录</span></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  // 数据列表
+  var dates = ['2016-10-9', '2016-10-10', '2016-10-11'];
+  var signintimes = ['10', '11', '12'];
+  // 下拉刷新页面
+  var ptrContent = $$('.pull-to-refresh-content');
+
+  // 添加'refresh'监听器
+  ptrContent.on('refresh', function(e) {
+    // 模拟2s的加载过程
+    setTimeout(function() {
+      // 日期 
+      var date = dates[Math.floor(Math.random() * dates.length)];
+      // 次数
+      var time = signintimes[Math.floor(Math.random() * signintimes.length)];
+
+      // 列表元素的HTML字符串
+      var itemHTML = '<li class="swipeout">' +
+        '<a href="#" class="swipeout-content item-content">' +
+        '<div>'+
+        '<i class="fa fa-sign"></i>' +
+        '<span>' + date + '</span>' +
+        '<em>' + '打卡' + time + '次</em>' +
+        '</div>'+
+        '<div class="item-after"><i class="fa fa-angle-right"></i></div>'+
+        '</a>' +
+        '<div class="swipeout-actions-right"><a href="#" class="swipeout-more">更多</a></div>'+
+        '</li>';
+      // 前插新列表元素
+      ptrContent.find('ul').prepend(itemHTML);
+      // 加载完毕需要重置
+      myApp.pullToRefreshDone();
+    }, 2000);
+  });
+
+  //底部切换
+  $$(".footer-signin>a").click(function() {
+    var _this = $$(this);
+    var index = _this.index();
+    $$(".footer-signin>a").removeClass("fbtn-matter").addClass("fbtn-cancle");
+    _this.removeClass("fbtn-cancle").addClass("fbtn-matter");
+    $$(".section-signin").hide().eq(index).show();
+  });
+  </script>
+</body>

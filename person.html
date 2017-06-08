@@ -1,0 +1,88 @@
+<html>
+ 
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>日志列表</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view view-content">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section wh-section-bottomfixed">
+             <div class="person-information">
+                 <div class="top-img"><img src="images/img1.jpg"></div>
+                 <div class="per-imgbox">
+                   <a class="per-img"><img src="images/img2.jpg"></a>
+                   <p class="p1">点击上传您的的头像</p>
+               </div>
+                 <table class="table1" width="100%">
+                     <tr>
+                          <td><i class="fa fa-user"></i><em>姓名：</em></td>
+                          <td>刘洋</td>
+                     </tr>
+                       <tr>
+                          <td><i class="fa fa-compay"></i><em>公司名称：</em></td>
+                          <td>万户网络</td>
+                     </tr>
+                      <tr>
+                          <td><i class="fa fa-phone"></i><em>联系电话：</em></td>
+                          <td>1784405667</td>
+                     </tr>
+                      <tr>
+                          <td><i class="fa fa-sex"></i><em>性别：</em></td>
+                          <td>男</td>
+                     </tr>
+                      <tr>
+                          <td><i class="fa fa-envelope-b"></i><em>电子邮件：</em></td>
+                          <td>343435466@qq.com</td>
+                     </tr>
+                      <tr>
+                          <td><i class="fa fa-calendar"></i><em>出生年月：</em></td>
+                          <td>1992-10-10</td>
+                     </tr>
+                 </table>
+             </div>
+            
+          </section>
+          <div class="lead-huizhi-footer">
+              <a href="##" class="on" style="padding: .8rem 3rem;border-radius: 2.5rem;">确认签到</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="template/js/template.min.js"></script>
+  <script src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  // 清除搜索区域焦点bug
+
+  function removeSearch(schElmID) {
+    $$(schElmID).blur().val(""); //主动清除焦点
+    $$(schElmID).next('.searchbar-cancel').hide();
+  }
+
+  // 搜索焦点时
+  $$('#fbtn-save').on('click', function() {
+    $$(this).next('.searchbar-cancel').show();
+  })
+
+  $(document).ready(function() {
+    $(".wh-article-lists li").click(function() {
+      $(this).addClass("current").siblings().removeClass("current");
+    })
+  })
+  </script>
+</body>
+
+</html>

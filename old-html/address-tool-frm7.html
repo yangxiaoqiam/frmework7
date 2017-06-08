@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>我的群组</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <section id="sectionScroll" class="wh-section">
+            <div class="wh-container">
+              <div class="row add-mygroup" >
+                <div class="col-50">
+                  <i class="fa fa-phone"></i>
+                  <p>电话会议</p>
+                </div>
+                <div class="col-50">
+                  <i class="fa fa-desktop"></i>
+                  <p>视频会议</p>
+                </div>
+                <div class="col-50">
+                  <i class="fa fa-comments"></i>
+                  <p>发起聊天</p>
+                </div>
+                <div class="col-50">
+                  <i class="fa fa-envelope-o"></i>
+                  <p>发邮件</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  // 清除搜索区域焦点bug
+  function removeSearch(schElmID) {
+    $$(schElmID).blur().val(""); //主动清除焦点
+    $$(schElmID).next('.searchbar-cancel').hide();
+  }
+
+  // 搜索焦点时
+  $$('#fbtn-save').on('click', function() {
+    $$(this).next('.searchbar-cancel').show();
+  })
+  </script>
+</body>
+
+</html>

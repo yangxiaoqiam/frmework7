@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>表单页</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+ </head>
+ <body class="">
+<div class="views">
+    <div class="view view-main">
+        <div class="pages">
+            <div class="page" data-page="page-webapp-document-edit">
+                <section class="page-content wh-section wh-section-bottomfixed">
+                    <footer class="wh-footer wh-footer-forum" id="footerButton">
+                        <div class="wh-container">
+                            <div class="wh-footer-btn row">
+                                <div class="webapp-footer-linebtn">
+                                    <div class="fl clearfix">
+                                        <a href="javascript:subBackForm();" class="panel-return-a">退回</a>
+                                        <a href="javascript:if(formCheck()){subForm();}" class="panel-return-a">发送</a>
+                                    </div>
+                                        <a id="fbtn-more" onclick="" data-popover=".popover-links" class="fr fbtn-more"><span>更多</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- 底部弹出 -->
+                    <div class="new-popover" id="">
+                        <div class="new-pop" id="">
+                            <a href="javascript:addSign();" class="fbtn-matter close-popover">加签</a>
+                            <a href="javascript:tranInfo();" class="fbtn-matter close-popover">转办</a>
+                            <a href="javascript:selfsend();" class="fbtn-matter close-popover">阅件</a>
+                        </div>
+                        <div class="new-sanjiao"></div>
+                    </div>
+                    <div class="gray-back"></div>
+                    <!-- 底部弹出 -->
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="template/js/template.min.js"></script>
+<script type="text/javascript">
+//Export DOM7 to local variable to make it easy accessable
+var myApp = new Framework7();
+var $$ = Dom7;
+
+
+  //右下角菜单弹框
+  $$('#fbtn-more').click(function () {
+    // body...
+  //alert(1);
+  $$('.new-popover').css("display","block");
+  $$('.gray-back').css("display","block");
+})
+  $$('.gray-back').click(function () {
+    // body...
+    $$('.new-popover').css("display","none");
+    $$('.gray-back').css("display","none");
+  })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>流程列表</title>
+  <link rel="stylesheet" href="dist/css/template.style.css" />
+  <link rel="stylesheet" href="dist/css/template.style.ios.css" />
+  <link rel="stylesheet" href="dist/css/template.style.colors.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <footer class="wh-footer wh-footer-forum wh-add-footer">
+            <div>
+              <div class="wh-wrapper">
+                <div class="wh-container">
+                  <nav class="wh-info-nav">
+                    <ul class="wh-i-n-default swiper-wrapper">
+                      <li class=" swiper-slide nav-active" data-checkbox="check">
+                        <a href=""><img src="images/user1.png" /> <p>王海城</p></a>
+                      </li>
+                      <li class=" swiper-slide" data-checkbox="uncheck">
+                        <a href=""><img src="images/user2.png" /> <p>李帅</p></a>
+                      </li>
+                      <li class=" swiper-slide" data-checkbox="uncheck">
+                        <a href=""><img src="images/user3.png" /> <p>莫晓雯</p></a>
+                      </li> 
+                      <li class=" swiper-slide nav-active" data-checkbox="check">
+                        <a href=""><img src="images/user1.png" /> <p>王海城</p></a>
+                      </li>
+                      <li class=" swiper-slide" data-checkbox="uncheck">
+                        <a href=""><img src="images/user2.png" /> <p>李帅</p></a>
+                      </li>
+                      <li class=" swiper-slide" data-checkbox="uncheck">
+                        <a href=""><img src="images/user3.png" /> <p>莫晓雯</p></a>
+                      </li> 
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- 电话会议发起 -->
+              <!-- <div class="add-btn prompt-ok-phone"><span >确定(8)</span></div>
+ -->
+              <!-- 视频会议发起 -->
+              <div class="add-btn prompt-ok-video"><span >确定(8)</span></div> 
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  var infoNavswiper = new Swiper('.wh-info-nav', {
+    //pagination: '.swiper-pagination',
+    slidesPerView: 5,
+    spaceBetween: 0,
+    freeMode: true
+  });  
+
+  //发起电话会议
+  $$('.prompt-ok-phone').on('click', function () {
+  var modal = myApp.modal({
+    title: '电话会议发起',
+    text: '请输入留言内容',
+    afterText:  '<div class="input-field"><input type="text" class="modal-text-input"></div> ',
+    buttons: [
+      {
+        text: '立刻发起'
+      } 
+    ]
+  })
+  myApp.swiper($$(modal).find('.swiper-container'), {pagination: '.swiper-pagination'});
+  });
+
+  //视频会议发起
+  $$('.prompt-ok-video').on('click', function () {
+  var modal = myApp.modal({
+    title: '视频会议发起',
+    text: '当前已选择12人参会',
+    afterText:  ' <div class="input-field"><input type="text" class="modal-text-input" value="请填写会议名称"></div>  '+
+    '<ul class="add-btn-modal-ul"><li><label class="label-radio"><input type="radio" name="my-radio" value="" > <span>evo客户端</span></label></li><li><label class="label-radio"><input type="radio" name="my-radio" value=""  > <span>短信</span></label></li><li><label class="label-radio"><input type="radio" name="my-radio" value=""  > <span>微信企业号</span></label></li></ul>',
+    buttons: [
+      {
+        text: '立刻召开'
+      } 
+    ]
+  })
+  myApp.swiper($$(modal).find('.swiper-container'), {pagination: '.swiper-pagination'});
+  });
+
+  </script>
+</body>
+
+</html>

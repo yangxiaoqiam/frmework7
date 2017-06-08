@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>计划报送</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template.style.colors.min.css" />
+</head>
+
+<body class="theme-green">
+  <div class="views">
+    <div class="view">
+      <div class="pages">
+        <div class="page">
+          <section class="wh-section wh-section-bottomfixed">
+            <aside class="wh-category wh-category-forum">
+              <div class="wh-container">
+                <div class="wh-cate-lists list-block wh-cate-planlist">
+                  <ul>
+                    <li class="accordion-item">
+                      <label class="label-checkbox">
+                        <input type="checkbox" name="my-checkbox" value="实名">
+                        <span class="edit-radio-l"></span>
+                      </label>
+                      <a href="#" class="item-content item-link">
+                        <p>
+                          <strong>新增计划</strong>
+                        </p>
+                      </a>
+                      <div class="accordion-item-content">
+                        <div class="wh-cate-lists">
+                          <ul>
+                            <li class="accordion-item">
+                              <label class="label-checkbox">
+                                <input type="checkbox" name="my-checkbox" value="实名">
+                                <span class="edit-radio-l"></span>
+                              </label>
+                              <a href="#" class="item-content item-link">
+                                <p>
+                                  <strong>新增计划</strong>
+                                </p>
+                              </a>
+                              <div class="accordion-item-content">
+                              </div>
+                            </li>
+                            <li class="accordion-item">
+                              <label class="label-checkbox">
+                                <input type="checkbox" name="my-checkbox" value="实名">
+                                <span class="edit-radio-l"></span>
+                              </label>
+                              <a href="#" class="item-content item-link">
+                                <p>
+                                  <strong>新增单项</strong>
+                                </p>
+                              </a>
+                              <div class="accordion-item-content">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="accordion-item">
+                      <label class="label-checkbox">
+                        <input type="checkbox" name="my-checkbox" value="实名">
+                        <span class="edit-radio-l"></span>
+                      </label>
+                      <a href="#" class="item-content item-link notip">
+                        <p>
+                          <strong>计划送审</strong>
+                        </p>
+                      </a> 
+                    </li> 
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var $$ = Dom7;
+  var myApp = new Framework7({
+    init: function() {
+      if (!$$(".accordion-item").children(".accordion-item-content")) { 
+        $$(this).children(".item-link").addClass("notip");
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>

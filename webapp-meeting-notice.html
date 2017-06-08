@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>会议</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" /> 
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-meeting-notice">
+          <section class="meeting-notice wh-section wh-section-bottomfixed pull-to-refresh-content pull-to-refresh-no-navbar">
+            <!-- 下拉刷新 -->
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+              <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <!-- 下拉刷新 -->
+            <div class="webapp-meeting">
+              <div class="meeting-notice">
+                <div class="list-block">
+                  <ul>
+                    <li class="swipeout">
+                      <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                        <div>
+                          <strong class="forum-avatar m-tag-ny">待参加</strong>
+                          <p>
+                            【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                            <span>[2015-03-20 13:30]</span>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swipeout">
+                      <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                        <div>
+                          <strong class="forum-avatar m-tag-not">不参加</strong>
+                          <p>
+                            【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                            <span>[2015-03-20 13:30]</span>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swipeout">
+                      <a href="webapp-meeting-info.html" class="swipeout-content item-content">
+                        <div>
+                          <strong class="forum-avatar m-tag-had">已参加</strong>
+                          <p>
+                            【主持人】在【首次发起时间】召开的【会议名称】等待您的参与！
+                            <span>[2015-03-20 13:30]</span>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 底部导航 -->
+          <div class="lead-meeting-footer">
+              <a href="##">会议通知</a>
+              <a href="##" class="on">会议预定</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript" src="template/js/plugin/zepto.js"></script>
+  <script type="text/javascript" src="template/js/plugin/simplecalendar.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+  calendar.init('ajax', 'json/events.json');
+
+  // 下拉刷新页面
+  var ptrContent = $$('.pull-to-refresh-content');
+
+  // 添加'refresh'监听器
+  ptrContent.on('refresh', function(e) {
+    // 模拟2s的加载过程
+    setTimeout(function() {
+      var title = titles[Math.floor(Math.random() * titles.length)];
+      var time = times[Math.floor(Math.random() * times.length)];
+      var where = wheres[Math.floor(Math.random() * wheres.length)];
+      var click = clicks[Math.floor(Math.random() * clicks.length)];
+
+      // 前插新列表元素
+      ptrContent.find('.info-list').prepend(itemHTML);
+
+      // 加载完毕需要重置
+      myApp.pullToRefreshDone();
+    }, 2000);
+  });
+</script>
+
+</body>

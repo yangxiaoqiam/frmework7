@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+  <title>查看汇报</title>
+  <link rel="stylesheet" href="template/css/template.style.ios.min.css" />
+  <link rel="stylesheet" href="template/css/template.webapp-style.min.css" />
+</head>
+
+<body class="grey-bg">
+  <div class="views">
+    <div class="view view-main">
+      <div class="pages">
+        <div class="page" data-page="page-webapp-check">
+          <section class="section-mail wh-section wh-section-bottomfixed">
+            <div class="mail-todo">
+              <div class="app-tabheader-line clearfix">
+                <!-- 关联到第一个tab, 默认激活 -->
+                <div class="clearfix">
+                  <a href="#tab-mail-todo1" class="tab-link active">
+                    <span>本周工作评价<em>19</em></span>
+                  </a>
+                  <a href="#tab-mail-todo2" class="tab-link ">
+                    <span>下周工作提示</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs">
+                <!-- Tab 1, 默认激活 -->
+                <div id="tab-mail-todo1" class="tab active">
+                  <div class="check-report">
+                    <div class="write">
+                      <textarea class="edit-txta edit-txta-l" placeholder="请输入文字"></textarea>
+                    </div>
+                    <div class="load">
+                      <a href="">提交</a>
+                    </div>
+                    <div class="work-grade">
+                      <div class="title"><p>您的本周工作评价</p></div>
+                      <div class="cont">
+                        <p class="wet">本周工作完成度不行</p>
+                        <p class="time">
+                          <span>17-03-22</span>&nbsp;<span>14:20:20</span>
+                          <span class="name">王丽丽</span>
+                        </p>
+                      </div>
+                      <div class="cont">
+                        <p class="wet">研究微信研究微信研究微信研究微信研究微信研究微信研究微信研究微信研究微信</p>
+                        <p class="time">
+                          <span>17-03-22</span>&nbsp;<span>14:20:20</span>
+                          <span class="name">王丽丽</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="work-grade">
+                      <div class="title"><p>您的下周工作提示</p></div>
+                      <div class="cont">
+                        <p class="wet">下周周工作</p>
+                        <p class="wet">1、把ppt完善</p>
+                        <p class="wet">2、把试卷完成</p>
+                        <p class="time">
+                          <span>17-03-22</span>&nbsp;<span>14:20:20</span>
+                          <span class="name">王丽丽</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div id="tab-mail-todo2" class="tab">
+                  
+                </div>
+              </div>
+            </div>
+          </section> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="template/js/template.min.js"></script>
+  <script type="text/javascript">
+  var myApp = new Framework7();
+  var $$ = Dom7;
+
+  //添加视图
+  var mainView = myApp.addView('.view');
+
+
+  </script>
+</body>

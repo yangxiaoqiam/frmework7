@@ -7022,10 +7022,14 @@ p.no-search {
   color: #999;
   margin-right: .5rem;
 }
-.focum-a .three-tab-app {
-  background: #fff;
+.graybox-a {
+  background: #efeff4;
+  padding: 1rem 0;
 }
-.focum-a .ser {
+.graybox-a .ser-aa {
+  margin: 0 auto;
+}
+.ser-aa {
   background: #fff;
   width: 92%;
   margin: 0 auto;
@@ -7037,17 +7041,20 @@ p.no-search {
   border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-.focum-a .ser i.fa {
+.ser-aa i.fa {
   position: relative;
   background: transparent;
 }
-.focum-a .ser input {
+.ser-aa input {
   border: 0 none;
   width: 85%;
   height: 2rem;
   line-height: 2rem;
   margin-left: 0.5rem;
   font-size: 1.26rem;
+}
+.focum-a .three-tab-app {
+  background: #fff;
 }
 .focum-a .ztop {
   background: #fff;
@@ -7444,9 +7451,6 @@ p.no-search {
   font-weight: lighter;
   margin-top: 0.8rem;
 }
-.new-infomation .replies-con textarea {
-  height: 17rem;
-}
 .new-infomation .fbxx {
   padding: 1rem 1rem 0.8rem 1rem;
   border-bottom: 1px solid #ddd;
@@ -7500,4 +7504,20 @@ p.no-search {
   padding: 0 .7rem;
   height: 2rem;
   line-height: 2rem;
+}
+.new-infomation .replies-con.infomation-pl textarea {
+  height: 12rem;
+}
+.info-list1 li {
+  height: 3rem;
+  line-height: 3.1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+.info-list1 li span {
+  font-size: 1.3rem;
+}
+.info-list1 li em {
+  margin-right: 1rem;
 }

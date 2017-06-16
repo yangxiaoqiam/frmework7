@@ -970,6 +970,33 @@ label.label-radio.active-state .edit-radio-l:before {
 .fa-sex:before {
   content: "\f0d8";
 }
+.fa-box:before {
+  content: "\f0d9";
+}
+.fa-num:before {
+  content: "\f0da";
+}
+.fa-per:before {
+  content: "\f0db";
+}
+.fa-noselect:before {
+  content: "\f0dc";
+}
+.fa-selected:before {
+  content: "\f0dd";
+}
+.fa-man:before {
+  content: "\f0de";
+}
+.fa-lady:before {
+  content: "\f0df";
+}
+.fa-camera:before {
+  content: "\f0de";
+}
+.fa-boxa:before {
+  content: "\f0e1";
+}
 /*...........
 Big Icon
 ....*/
